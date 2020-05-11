@@ -10,8 +10,8 @@
         <copied_from_name/>
         <description/>
         <internal_name>assign_available_phone_number</internal_name>
-        <label_cache>[{"name":"21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number","label":"2➛Available Phone Numbers Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_llbo_cb_msft_tms_available_phone_numbers","column_name":"u_phone_number"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Record.phone_number","label":"2➛Available Phone Numbers Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_llbo_cb_msft_tms_available_phone_numbers","column_name":"phone_number"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Table","label":"2➛Available Phone Numbers Table","reference":"x_llbo_cb_msft_tms_available_phone_numbers","reference_display":"Available Phone Numbers","type":"table_name","base_type":"table_name"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Record","label":"2➛Available Phone Numbers Record","reference":"x_llbo_cb_msft_tms_available_phone_numbers","reference_display":"Available Phone Numbers","type":"reference","base_type":"reference"},{"name":"124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Table","label":"1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name"},{"name":"124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record","label":"1➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"4c7d5e2d-cb8e-4b0e-abee-dd91a8b7b1c7.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"4c7d5e2d-cb8e-4b0e-abee-dd91a8b7b1c7.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"subflow.user_id","label":"Input➛User ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.record","label":"4➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.table_name","label":"4➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name"},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name","label":"4➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone","label":"4➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"}]</label_cache>
-        <latest_snapshot>263dc561133fc4907cbd30128144b052</latest_snapshot>
+        <label_cache>[{"name":"7b3f76d2-7265-479c-a0f2-6b338a7069b4.scheduled_end_date_time","label":"8➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"7b3f76d2-7265-479c-a0f2-6b338a7069b4.total_duration","label":"8➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number","label":"3➛Available Phone Numbers Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_llbo_cb_msft_tms_available_phone_numbers","column_name":"u_phone_number"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Record.phone_number","label":"3➛Available Phone Numbers Record➛Phone Number","reference":"","reference_display":"Phone Number","type":"string","base_type":"string","parent_table_name":"x_llbo_cb_msft_tms_available_phone_numbers","column_name":"phone_number"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Table","label":"3➛Available Phone Numbers Table","reference":"x_llbo_cb_msft_tms_available_phone_numbers","reference_display":"Available Phone Numbers","type":"table_name","base_type":"table_name"},{"name":"21429091-5b33-411c-8af9-43bc692fba76.Record","label":"3➛Available Phone Numbers Record","reference":"x_llbo_cb_msft_tms_available_phone_numbers","reference_display":"Available Phone Numbers","type":"reference","base_type":"reference"},{"name":"124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Table","label":"2➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name"},{"name":"124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record","label":"2➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"4c7d5e2d-cb8e-4b0e-abee-dd91a8b7b1c7.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id"},{"name":"4c7d5e2d-cb8e-4b0e-abee-dd91a8b7b1c7.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name"},{"name":"subflow.user_id","label":"Input➛User ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":""},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.record","label":"6➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.table_name","label":"6➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name"},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name","label":"6➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone","label":"6➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"},{"name":"9675db0e-3894-4c27-850c-a38ad059230a.Record","label":"9.2➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"},{"name":"9675db0e-3894-4c27-850c-a38ad059230a.Table","label":"9.2➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name"},{"name":"124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name","label":"2➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"}]</label_cache>
+        <latest_snapshot>3d1f6308137410507cbd30128144b008</latest_snapshot>
         <master_snapshot>263dc561133fc4907cbd30128144b052</master_snapshot>
         <name>Assign available phone number </name>
         <outputs/>
@@ -27,7 +27,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>d08d08a51377c4907cbd30128144b045</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>42</sys_mod_count>
         <sys_name>Assign available phone number </sys_name>
         <sys_overrides/>
         <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
@@ -36,11 +36,166 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name>sys_hub_flow_d08d08a51377c4907cbd30128144b045</sys_update_name>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=d08d08a51377c4907cbd30128144b045"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=d08d08a51377c4907cbd30128144b045^sys_idNOT IN3fd4602d13f7c4907cbd30128144b0cd,97ee2bfa137f00d07cbd30128144b067,abd4602d13f7c4907cbd30128144b0c7,ae563cc813bc10508907dd828144b0bb,aebfeb3e137f00d07cbd30128144b0f9,aecf8ce91377c4907cbd30128144b03d,ccd070ed133bc4907cbd30128144b00d"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=d08d08a51377c4907cbd30128144b045^sys_idNOT IN209d9fc813f010507cbd30128144b09b,38a06700133410507cbd30128144b001,3ae36344133410507cbd30128144b042,3fd4602d13f7c4907cbd30128144b0cd,43402fcc13f010507cbd30128144b0d0,47402fcc13f010507cbd30128144b0d4,47e36344133410507cbd30128144b061,8f402fcc13f010507cbd30128144b0d6,97ee2bfa137f00d07cbd30128144b067,9b402fcc13f010507cbd30128144b0e8,abd4602d13f7c4907cbd30128144b0c7,ae563cc813bc10508907dd828144b0bb,aebfeb3e137f00d07cbd30128144b0f9,aecf8ce91377c4907cbd30128144b03d,ccd070ed133bc4907cbd30128144b00d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e09d9fc813f010507cbd30128144b09a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>availablephonenumber</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:04:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>209d9fc813f010507cbd30128144b09b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:24</sys_updated_on>
+        <ui_id>0a80b334-386b-4c13-83d5-ae60b4befbc3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=209d9fc813f010507cbd30128144b09b"/>
+    <sys_element_mapping action="delete_multiple" query="id=209d9fc813f010507cbd30128144b09b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>availablephonenumber</field>
+        <id>209d9fc813f010507cbd30128144b09b</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:04:45</sys_created_on>
+        <sys_id>209d9fc813f010507cbd30128144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:04:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045</table>
+        <value>{{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b0a06700133410507cbd30128144b001</block>
+        <comment>Waiting for User table to get properly updated with available phone number.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:18:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>38a06700133410507cbd30128144b001</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>7b3f76d2-7265-479c-a0f2-6b338a7069b4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=38a06700133410507cbd30128144b001"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>38a06700133410507cbd30128144b001</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:18:09</sys_created_on>
+        <sys_id>b4a06700133410507cbd30128144b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:18:09</sys_updated_on>
+        <value>1970-01-01 00:02:00</value>
+        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>38a06700133410507cbd30128144b001</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:18:09</sys_created_on>
+        <sys_id>f0a06700133410507cbd30128144b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:18:09</sys_updated_on>
+        <value/>
+        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bee36344133410507cbd30128144b041</block>
+        <comment>initiate with error</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ae36344133410507cbd30128144b042</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:24</sys_updated_on>
+        <ui_id>200c91b2-4582-47de-b492-ec98e7db607c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3ae36344133410507cbd30128144b042"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3ae36344133410507cbd30128144b042</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_id>b2e36344133410507cbd30128144b044</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:30</sys_updated_on>
+        <value>error</value>
+        <variable display_value="">fee36344133410507cbd30128144b037</variable>
+    </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -49,14 +204,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>2</order>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 15:25:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3fd4602d13f7c4907cbd30128144b0cd</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>98</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -64,7 +219,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>21429091-5b33-411c-8af9-43bc692fba76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3fd4602d13f7c4907cbd30128144b0cd"/>
@@ -140,21 +295,20 @@
     </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>5</order>
-        <parent_ui_id/>
+        <order>9.1</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
-        <sys_created_on>2020-03-31 03:21:06</sys_created_on>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>97ee2bfa137f00d07cbd30128144b067</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_id>43402fcc13f010507cbd30128144b0d0</sys_id>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -162,7 +316,262 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
+        <ui_id>ba882767-0269-4712-93a3-88b4575f067e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=43402fcc13f010507cbd30128144b0d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43402fcc13f010507cbd30128144b0d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>4f402fcc13f010507cbd30128144b0d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <value>Number didn't get assigned properly in User table.</value>
+        <variable display_value="">c34aa006531003003bf1d9109ec587c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43402fcc13f010507cbd30128144b0d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>e9042744133410507cbd30128144b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <value>Number didn't get assigned properly in User table.</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <order>9.2</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47402fcc13f010507cbd30128144b0d4</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
+        <ui_id>9675db0e-3894-4c27-850c-a38ad059230a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=47402fcc13f010507cbd30128144b0d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>47402fcc13f010507cbd30128144b0d4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>83402fcc13f010507cbd30128144b0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">957cdff1531003003bf1d9109ec58753</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>47402fcc13f010507cbd30128144b0d4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>a9042744133410507cbd30128144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=47402fcc13f010507cbd30128144b0d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>29042744133410507cbd30128144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"CB Platforms","value":"533fc2c81365bbc486d0bfb85144b0a6"}^description=Phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}} did NOT get assigned to the user {{124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name}}properly. Please review this automated assignment.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>03402fcc13f010507cbd30128144b0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value>assignment_group={"display":"CB Platforms","value":"533fc2c81365bbc486d0bfb85144b0a6"}^description=Phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}} did NOT get assigned to the user {{124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name}}properly. Please review this automated assignment.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>65042744133410507cbd30128144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>4f402fcc13f010507cbd30128144b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cfe36344133410507cbd30128144b060</block>
+        <comment>Update with success as complete sub-flow ran.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47e36344133410507cbd30128144b061</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>cd4922c7-beb0-42bd-912c-a4d75f35d7bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=47e36344133410507cbd30128144b061"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>47e36344133410507cbd30128144b061</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_id>cbe36344133410507cbd30128144b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:30</sys_updated_on>
+        <value>success</value>
+        <variable display_value="">fee36344133410507cbd30128144b037</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0b402fcc13f010507cbd30128144b0d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8f402fcc13f010507cbd30128144b0d6</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8f402fcc13f010507cbd30128144b0d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8f402fcc13f010507cbd30128144b0d6</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>9b402fcc13f010507cbd30128144b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <value>{{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}}!={{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-03-31 03:21:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>97ee2bfa137f00d07cbd30128144b067</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>83bc5701-c893-41dc-945b-b44cc20b0592</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=97ee2bfa137f00d07cbd30128144b067"/>
@@ -191,6 +600,39 @@
         <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
         <value>Assigning user {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}} phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">17402fcc13f010507cbd30128144b0e8</block>
+        <comment/>
+        <connected_to>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9b402fcc13f010507cbd30128144b0e8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9b402fcc13f010507cbd30128144b0e8"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -200,14 +642,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 15:25:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>abd4602d13f7c4907cbd30128144b0c7</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>98</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -215,7 +657,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>124ba9d8-31d1-4a28-8e1a-afdcba1fa941</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=abd4602d13f7c4907cbd30128144b0c7"/>
@@ -357,14 +799,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>3</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-05-10 17:54:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ae563cc813bc10508907dd828144b0bb</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -372,7 +814,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>a279661b-758f-41cc-bd09-309da37d9fb3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ae563cc813bc10508907dd828144b0bb"/>
@@ -410,14 +852,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>7</order>
-        <parent_ui_id/>
+        <order>10.1</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aebfeb3e137f00d07cbd30128144b0f9</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -425,7 +867,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>4cf212dd-5313-42ea-b756-2c7bba4d5c00</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aebfeb3e137f00d07cbd30128144b0f9"/>
@@ -448,11 +890,11 @@
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:47</sys_created_on>
         <sys_id>a1cf6f3e137f00d07cbd30128144b0e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-03-31 03:24:47</sys_updated_on>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
         <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
-        <value>Removing number {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}} from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
+        <value>Removing number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}  from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
     </sys_element_mapping>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -463,14 +905,14 @@
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>4</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 13:53:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aecf8ce91377c4907cbd30128144b03d</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -478,7 +920,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>5bcff7fd-d8d7-4669-b300-442a9ef767f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aecf8ce91377c4907cbd30128144b03d"/>
@@ -606,14 +1048,14 @@
         <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>6</order>
-        <parent_ui_id/>
+        <order>10.2</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 16:18:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ccd070ed133bc4907cbd30128144b00d</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>96</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -621,7 +1063,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>f51cbb72-deec-476e-b730-55466dd66f64</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ccd070ed133bc4907cbd30128144b00d"/>
@@ -753,7 +1195,174 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_instance action="delete_multiple" query="flow=d08d08a51377c4907cbd30128144b045^sys_idNOT IN3fd4602d13f7c4907cbd30128144b0cd,97ee2bfa137f00d07cbd30128144b067,abd4602d13f7c4907cbd30128144b0c7,ae563cc813bc10508907dd828144b0bb,aebfeb3e137f00d07cbd30128144b0f9,aecf8ce91377c4907cbd30128144b03d,ccd070ed133bc4907cbd30128144b00d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d08d08a51377c4907cbd30128144b045^sys_idNOT IN549d9fc813f010507cbd30128144b086,fee36344133410507cbd30128144b037"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>availablephonenumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Available Phone Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</model>
+        <model_id>d08d08a51377c4907cbd30128144b045</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:04:44</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>549d9fc813f010507cbd30128144b086</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:04:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Success Or Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</model>
+        <model_id>d08d08a51377c4907cbd30128144b045</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>fee36344133410507cbd30128144b037</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d08d08a51377c4907cbd30128144b045^sys_idNOT IN3fd4602d13f7c4907cbd30128144b0cd,43402fcc13f010507cbd30128144b0d0,47402fcc13f010507cbd30128144b0d4,97ee2bfa137f00d07cbd30128144b067,abd4602d13f7c4907cbd30128144b0c7,ae563cc813bc10508907dd828144b0bb,aebfeb3e137f00d07cbd30128144b0f9,aecf8ce91377c4907cbd30128144b03d,ccd070ed133bc4907cbd30128144b00d"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -762,14 +1371,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>2</order>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 15:25:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3fd4602d13f7c4907cbd30128144b0cd</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>98</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -777,7 +1386,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>21429091-5b33-411c-8af9-43bc692fba76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3fd4602d13f7c4907cbd30128144b0cd"/>
@@ -853,21 +1462,20 @@
     </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_inputs/>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>5</order>
-        <parent_ui_id/>
+        <order>9.1</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
-        <sys_created_on>2020-03-31 03:21:06</sys_created_on>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>97ee2bfa137f00d07cbd30128144b067</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_id>43402fcc13f010507cbd30128144b0d0</sys_id>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -875,7 +1483,168 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
+        <ui_id>ba882767-0269-4712-93a3-88b4575f067e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=43402fcc13f010507cbd30128144b0d0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43402fcc13f010507cbd30128144b0d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>4f402fcc13f010507cbd30128144b0d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <value>Number didn't get assigned properly in User table.</value>
+        <variable display_value="">c34aa006531003003bf1d9109ec587c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43402fcc13f010507cbd30128144b0d0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>e9042744133410507cbd30128144b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <value>Number didn't get assigned properly in User table.</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <order>9.2</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47402fcc13f010507cbd30128144b0d4</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
+        <ui_id>9675db0e-3894-4c27-850c-a38ad059230a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=47402fcc13f010507cbd30128144b0d4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>47402fcc13f010507cbd30128144b0d4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>83402fcc13f010507cbd30128144b0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">957cdff1531003003bf1d9109ec58753</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>47402fcc13f010507cbd30128144b0d4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>a9042744133410507cbd30128144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=47402fcc13f010507cbd30128144b0d4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>29042744133410507cbd30128144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"CB Platforms","value":"533fc2c81365bbc486d0bfb85144b0a6"}^description=Phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}} did NOT get assigned to the user {{124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name}}properly. Please review this automated assignment.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>03402fcc13f010507cbd30128144b0d6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value>assignment_group={"display":"CB Platforms","value":"533fc2c81365bbc486d0bfb85144b0a6"}^description=Phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}} did NOT get assigned to the user {{124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name}}properly. Please review this automated assignment.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:57</sys_created_on>
+        <sys_id>65042744133410507cbd30128144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>47402fcc13f010507cbd30128144b0d4</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>4f402fcc13f010507cbd30128144b0d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <table>var__m_sys_hub_action_input_3f9b1ff1531003003bf1d9109ec58775</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-03-31 03:21:06</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>97ee2bfa137f00d07cbd30128144b067</sys_id>
+        <sys_mod_count>80</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>83bc5701-c893-41dc-945b-b44cc20b0592</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=97ee2bfa137f00d07cbd30128144b067"/>
@@ -913,14 +1682,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 15:25:53</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>abd4602d13f7c4907cbd30128144b0c7</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>98</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -928,7 +1697,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>124ba9d8-31d1-4a28-8e1a-afdcba1fa941</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=abd4602d13f7c4907cbd30128144b0c7"/>
@@ -1070,14 +1839,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>3</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-05-10 17:54:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ae563cc813bc10508907dd828144b0bb</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>48</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1085,7 +1854,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>a279661b-758f-41cc-bd09-309da37d9fb3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ae563cc813bc10508907dd828144b0bb"/>
@@ -1123,14 +1892,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>7</order>
-        <parent_ui_id/>
+        <order>10.1</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aebfeb3e137f00d07cbd30128144b0f9</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>76</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1138,7 +1907,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>4cf212dd-5313-42ea-b756-2c7bba4d5c00</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aebfeb3e137f00d07cbd30128144b0f9"/>
@@ -1161,11 +1930,11 @@
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:47</sys_created_on>
         <sys_id>a1cf6f3e137f00d07cbd30128144b0e3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-03-31 03:24:47</sys_updated_on>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
         <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
-        <value>Removing number {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}} from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
+        <value>Removing number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}  from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
     </sys_element_mapping>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1176,14 +1945,14 @@
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>4</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 13:53:47</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>aecf8ce91377c4907cbd30128144b03d</sys_id>
-        <sys_mod_count>66</sys_mod_count>
+        <sys_mod_count>100</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1191,7 +1960,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>5bcff7fd-d8d7-4669-b300-442a9ef767f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=aecf8ce91377c4907cbd30128144b03d"/>
@@ -1319,14 +2088,14 @@
         <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
-        <order>6</order>
-        <parent_ui_id/>
+        <order>10.2</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 16:18:04</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>ccd070ed133bc4907cbd30128144b00d</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>96</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1334,7 +2103,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:40</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:21:22</sys_updated_on>
         <ui_id>f51cbb72-deec-476e-b730-55466dd66f64</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ccd070ed133bc4907cbd30128144b00d"/>
@@ -1363,6 +2132,289 @@
         <table>var__m_sys_hub_action_input_c3e09916c31332002841b63b12d3aedf</table>
         <value>{{21429091-5b33-411c-8af9-43bc692fba76.Record}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d08d08a51377c4907cbd30128144b045^sys_idNOT IN209d9fc813f010507cbd30128144b09b,38a06700133410507cbd30128144b001,3ae36344133410507cbd30128144b042,47e36344133410507cbd30128144b061,8f402fcc13f010507cbd30128144b0d6,9b402fcc13f010507cbd30128144b0e8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e09d9fc813f010507cbd30128144b09a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>availablephonenumber</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:04:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>209d9fc813f010507cbd30128144b09b</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:24</sys_updated_on>
+        <ui_id>0a80b334-386b-4c13-83d5-ae60b4befbc3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=209d9fc813f010507cbd30128144b09b"/>
+    <sys_element_mapping action="delete_multiple" query="id=209d9fc813f010507cbd30128144b09b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>availablephonenumber</field>
+        <id>209d9fc813f010507cbd30128144b09b</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:04:45</sys_created_on>
+        <sys_id>209d9fc813f010507cbd30128144b09d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:04:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045</table>
+        <value>{{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b0a06700133410507cbd30128144b001</block>
+        <comment>Waiting for User table to get properly updated with available phone number.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:18:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>38a06700133410507cbd30128144b001</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>7b3f76d2-7265-479c-a0f2-6b338a7069b4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=38a06700133410507cbd30128144b001"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>38a06700133410507cbd30128144b001</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:18:09</sys_created_on>
+        <sys_id>b4a06700133410507cbd30128144b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:18:09</sys_updated_on>
+        <value>1970-01-01 00:02:00</value>
+        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>38a06700133410507cbd30128144b001</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:18:09</sys_created_on>
+        <sys_id>f0a06700133410507cbd30128144b005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:18:09</sys_updated_on>
+        <value/>
+        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bee36344133410507cbd30128144b041</block>
+        <comment>initiate with error</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3ae36344133410507cbd30128144b042</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:24</sys_updated_on>
+        <ui_id>200c91b2-4582-47de-b492-ec98e7db607c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3ae36344133410507cbd30128144b042"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3ae36344133410507cbd30128144b042</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_id>b2e36344133410507cbd30128144b044</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:30</sys_updated_on>
+        <value>error</value>
+        <variable display_value="">fee36344133410507cbd30128144b037</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cfe36344133410507cbd30128144b060</block>
+        <comment>Update with success as complete sub-flow ran.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>47e36344133410507cbd30128144b061</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>cd4922c7-beb0-42bd-912c-a4d75f35d7bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=47e36344133410507cbd30128144b061"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>47e36344133410507cbd30128144b061</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:30</sys_created_on>
+        <sys_id>cbe36344133410507cbd30128144b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:30</sys_updated_on>
+        <value>success</value>
+        <variable display_value="">fee36344133410507cbd30128144b037</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0b402fcc13f010507cbd30128144b0d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8f402fcc13f010507cbd30128144b0d6</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8f402fcc13f010507cbd30128144b0d6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>8f402fcc13f010507cbd30128144b0d6</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_id>9b402fcc13f010507cbd30128144b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:16:41</sys_updated_on>
+        <value>{{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}}!={{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">17402fcc13f010507cbd30128144b0e8</block>
+        <comment/>
+        <connected_to>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:16:41</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>9b402fcc13f010507cbd30128144b0e8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:25</sys_updated_on>
+        <ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9b402fcc13f010507cbd30128144b0e8"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d08d08a51377c4907cbd30128144b045^sys_idNOT IN9bcd4c291377c4907cbd30128144b065"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>user_id</element>
@@ -1389,18 +2441,69 @@
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045^sys_idNOT IN109d9fc813f010507cbd30128144b08f,72e36344133410507cbd30128144b03f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>availablephonenumber</element>
+        <help/>
+        <hint/>
+        <label>Available Phone Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:04:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>109d9fc813f010507cbd30128144b08f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Available Phone Number</sys_name>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045_availablephonenumber_en</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:04:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result_status</element>
+        <help/>
+        <hint/>
+        <label>Success Or Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:32:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>72e36344133410507cbd30128144b03f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Success Or Error</sys_name>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d08d08a51377c4907cbd30128144b045_result_status_en</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:32:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d08d08a51377c4907cbd30128144b045^sys_idNOT INf63dc561133fc4907cbd30128144b0c6"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@12a782a</plan>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"f63dc561133fc4907cbd30128144b0c6","name":"plan"}}</plan>
         <plan_id display_value="Assign available phone number ">d08d08a51377c4907cbd30128144b045</plan_id>
-        <snapshot>263dc561133fc4907cbd30128144b052</snapshot>
+        <snapshot>3d1f6308137410507cbd30128144b008</snapshot>
         <sys_class_name>sys_flow_subflow_plan</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>f63dc561133fc4907cbd30128144b0c6</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1409,7 +2512,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:24</sys_updated_on>
     </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1437,7 +2540,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>263dc561133fc4907cbd30128144b052</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1446,11 +2549,11 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=263dc561133fc4907cbd30128144b052"/>
-    <sys_hub_flow_component action="delete_multiple" query="flow=263dc561133fc4907cbd30128144b052^sys_idNOT IN11d7388c13bc10508907dd828144b000,263dc561133fc4907cbd30128144b0b0,6e3dc561133fc4907cbd30128144b09c,7dcfaf3e137f00d07cbd30128144b06d,a23dc561133fc4907cbd30128144b098,a23dc561133fc4907cbd30128144b0ad,bdcfaf3e137f00d07cbd30128144b070"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=263dc561133fc4907cbd30128144b052^sys_idNOT IN11d7388c13bc10508907dd828144b000,263dc561133fc4907cbd30128144b0b0,2e046744133410507cbd30128144b0b5,66046744133410507cbd30128144b0ae,6a046744133410507cbd30128144b0aa,6e046744133410507cbd30128144b0b2,6e3dc561133fc4907cbd30128144b09c,7dcfaf3e137f00d07cbd30128144b06d,a2046744133410507cbd30128144b0ee,a23dc561133fc4907cbd30128144b098,a23dc561133fc4907cbd30128144b0ad,a6046744133410507cbd30128144b0e9,bdcfaf3e137f00d07cbd30128144b070,e6046744133410507cbd30128144b0f0,f2046744133410507cbd30128144b0f2"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1460,14 +2563,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>3</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-05-10 18:00:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>11d7388c13bc10508907dd828144b000</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1475,7 +2578,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>a279661b-758f-41cc-bd09-309da37d9fb3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=11d7388c13bc10508907dd828144b000"/>
@@ -1501,14 +2604,14 @@
         <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>6</order>
-        <parent_ui_id/>
+        <order>10.2</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>263dc561133fc4907cbd30128144b0b0</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1516,7 +2619,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
         <ui_id>f51cbb72-deec-476e-b730-55466dd66f64</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=263dc561133fc4907cbd30128144b0b0"/>
@@ -1533,6 +2636,208 @@
         <table>var__m_sys_hub_action_input_c3e09916c31332002841b63b12d3aedf</table>
         <value>{{21429091-5b33-411c-8af9-43bc692fba76.Record}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e09d9fc813f010507cbd30128144b09a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>availablephonenumber</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2e046744133410507cbd30128144b0b5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>0a80b334-386b-4c13-83d5-ae60b4befbc3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2e046744133410507cbd30128144b0b5"/>
+    <sys_element_mapping action="delete_multiple" query="id=2e046744133410507cbd30128144b0b5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>availablephonenumber</field>
+        <id>2e046744133410507cbd30128144b0b5</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>2e046744133410507cbd30128144b0e8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052</table>
+        <value>{{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <order>9.2</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>66046744133410507cbd30128144b0ae</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>9675db0e-3894-4c27-850c-a38ad059230a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=66046744133410507cbd30128144b0ae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>66046744133410507cbd30128144b0ae</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>ea046744133410507cbd30128144b0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=66046744133410507cbd30128144b0ae"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>66046744133410507cbd30128144b0ae</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>6a046744133410507cbd30128144b0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"CB Platforms","value":"533fc2c81365bbc486d0bfb85144b0a6"}^description=Phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}} did NOT get assigned to the user {{124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name}}properly. Please review this automated assignment.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>66046744133410507cbd30128144b0ae</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>a6046744133410507cbd30128144b0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <order>9.1</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6a046744133410507cbd30128144b0aa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>ba882767-0269-4712-93a3-88b4575f067e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6a046744133410507cbd30128144b0aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6a046744133410507cbd30128144b0aa</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>aa046744133410507cbd30128144b0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <value>Number didn't get assigned properly in User table.</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bee36344133410507cbd30128144b041</block>
+        <comment>initiate with error</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6e046744133410507cbd30128144b0b2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>200c91b2-4582-47de-b492-ec98e7db607c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6e046744133410507cbd30128144b0b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6e046744133410507cbd30128144b0b2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>ee046744133410507cbd30128144b0b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>error</value>
+        <variable display_value="">62046744133410507cbd30128144b097</variable>
+    </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -1541,14 +2846,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>2</order>
+        <order>3</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6e3dc561133fc4907cbd30128144b09c</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1556,7 +2861,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>21429091-5b33-411c-8af9-43bc692fba76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6e3dc561133fc4907cbd30128144b09c"/>
@@ -1625,14 +2930,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>5</order>
+        <order>7</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7dcfaf3e137f00d07cbd30128144b06d</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1640,7 +2945,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>83bc5701-c893-41dc-945b-b44cc20b0592</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7dcfaf3e137f00d07cbd30128144b06d"/>
@@ -1657,6 +2962,53 @@
         <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
         <value>Assigning user {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}} phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0b402fcc13f010507cbd30128144b0d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a2046744133410507cbd30128144b0ee</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
+        <ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a2046744133410507cbd30128144b0ee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a2046744133410507cbd30128144b0ee</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>2e046744133410507cbd30128144b0ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>{{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}}!={{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1666,14 +3018,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a23dc561133fc4907cbd30128144b098</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1681,7 +3033,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>124ba9d8-31d1-4a28-8e1a-afdcba1fa941</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a23dc561133fc4907cbd30128144b098"/>
@@ -1759,14 +3111,14 @@
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>4</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a23dc561133fc4907cbd30128144b0ad</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1774,7 +3126,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>5bcff7fd-d8d7-4669-b300-442a9ef767f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a23dc561133fc4907cbd30128144b0ad"/>
@@ -1829,6 +3181,67 @@
         <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
         <value>phone={{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b0a06700133410507cbd30128144b001</block>
+        <comment>Waiting for User table to get properly updated with available phone number.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a6046744133410507cbd30128144b0e9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>7b3f76d2-7265-479c-a0f2-6b338a7069b4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a6046744133410507cbd30128144b0e9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a6046744133410507cbd30128144b0e9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>26046744133410507cbd30128144b0ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value/>
+        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a6046744133410507cbd30128144b0e9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>e6046744133410507cbd30128144b0ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>1970-01-01 00:02:00</value>
+        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1838,14 +3251,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>7</order>
-        <parent_ui_id/>
+        <order>10.1</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bdcfaf3e137f00d07cbd30128144b070</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1853,7 +3266,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
         <ui_id>4cf212dd-5313-42ea-b756-2c7bba4d5c00</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bdcfaf3e137f00d07cbd30128144b070"/>
@@ -1864,12 +3277,92 @@
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:49</sys_created_on>
         <sys_id>7dcfaf3e137f00d07cbd30128144b071</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Removing number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}  from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">17402fcc13f010507cbd30128144b0e8</block>
+        <comment/>
+        <connected_to>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e6046744133410507cbd30128144b0f0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
+        <ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e6046744133410507cbd30128144b0f0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cfe36344133410507cbd30128144b060</block>
+        <comment>Update with success as complete sub-flow ran.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f2046744133410507cbd30128144b0f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
+        <ui_id>cd4922c7-beb0-42bd-912c-a4d75f35d7bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f2046744133410507cbd30128144b0f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f2046744133410507cbd30128144b0f2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>7a046744133410507cbd30128144b0f3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-03-31 03:24:49</sys_updated_on>
-        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
-        <value>Removing number {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}} from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
-    </sys_element_mapping>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>success</value>
+        <variable display_value="">62046744133410507cbd30128144b097</variable>
+    </sys_variable_value>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=263dc561133fc4907cbd30128144b052^sys_idNOT IN223dc561133fc4907cbd30128144b053"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>263dc561133fc4907cbd30128144b052</id>
@@ -1973,7 +3466,174 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_instance action="delete_multiple" query="flow=263dc561133fc4907cbd30128144b052^sys_idNOT IN11d7388c13bc10508907dd828144b000,263dc561133fc4907cbd30128144b0b0,6e3dc561133fc4907cbd30128144b09c,7dcfaf3e137f00d07cbd30128144b06d,a23dc561133fc4907cbd30128144b098,a23dc561133fc4907cbd30128144b0ad,bdcfaf3e137f00d07cbd30128144b070"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=263dc561133fc4907cbd30128144b052^sys_idNOT IN5e046744133410507cbd30128144b073,62046744133410507cbd30128144b097"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>availablephonenumber</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Available Phone Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</model>
+        <model_id>263dc561133fc4907cbd30128144b052</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5e046744133410507cbd30128144b073</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result_status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Success Or Error</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</model>
+        <model_id>263dc561133fc4907cbd30128144b052</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>62046744133410507cbd30128144b097</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_instance action="delete_multiple" query="flow=263dc561133fc4907cbd30128144b052^sys_idNOT IN11d7388c13bc10508907dd828144b000,263dc561133fc4907cbd30128144b0b0,66046744133410507cbd30128144b0ae,6a046744133410507cbd30128144b0aa,6e3dc561133fc4907cbd30128144b09c,7dcfaf3e137f00d07cbd30128144b06d,a23dc561133fc4907cbd30128144b098,a23dc561133fc4907cbd30128144b0ad,bdcfaf3e137f00d07cbd30128144b070"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1983,14 +3643,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>3</order>
+        <order>5</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-05-10 18:00:38</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>11d7388c13bc10508907dd828144b000</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1998,7 +3658,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>a279661b-758f-41cc-bd09-309da37d9fb3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=11d7388c13bc10508907dd828144b000"/>
@@ -2024,14 +3684,14 @@
         <compiled_snapshot>c3e09916c31332002841b63b12d3aedf</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>6</order>
-        <parent_ui_id/>
+        <order>10.2</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>263dc561133fc4907cbd30128144b0b0</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2039,7 +3699,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
         <ui_id>f51cbb72-deec-476e-b730-55466dd66f64</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=263dc561133fc4907cbd30128144b0b0"/>
@@ -2058,20 +3718,21 @@
     </sys_element_mapping>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
-        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
-        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
         <comment/>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>2</order>
-        <parent_ui_id/>
+        <order>9.2</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
-        <sys_created_on>2020-03-26 18:22:13</sys_created_on>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>6e3dc561133fc4907cbd30128144b09c</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_id>66046744133410507cbd30128144b0ae</sys_id>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2079,7 +3740,114 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>9675db0e-3894-4c27-850c-a38ad059230a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=66046744133410507cbd30128144b0ae"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>66046744133410507cbd30128144b0ae</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>ea046744133410507cbd30128144b0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=66046744133410507cbd30128144b0ae"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>66046744133410507cbd30128144b0ae</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>6a046744133410507cbd30128144b0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"CB Platforms","value":"533fc2c81365bbc486d0bfb85144b0a6"}^description=Phone number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}} did NOT get assigned to the user {{124ba9d8-31d1-4a28-8e1a-afdcba1fa941.Record.name}}properly. Please review this automated assignment.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>66046744133410507cbd30128144b0ae</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>a6046744133410507cbd30128144b0af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <order>9.1</order>
+        <parent_ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6a046744133410507cbd30128144b0aa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>ba882767-0269-4712-93a3-88b4575f067e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6a046744133410507cbd30128144b0aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6a046744133410507cbd30128144b0aa</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_id>aa046744133410507cbd30128144b0ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <value>Number didn't get assigned properly in User table.</value>
+        <variable display_value="">23c1bcc6531003003bf1d9109ec587e5</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-03-26 18:22:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6e3dc561133fc4907cbd30128144b09c</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>21429091-5b33-411c-8af9-43bc692fba76</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=6e3dc561133fc4907cbd30128144b09c"/>
@@ -2148,14 +3916,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>5</order>
+        <order>7</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>7dcfaf3e137f00d07cbd30128144b06d</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2163,7 +3931,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>83bc5701-c893-41dc-945b-b44cc20b0592</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=7dcfaf3e137f00d07cbd30128144b06d"/>
@@ -2189,14 +3957,14 @@
         <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>1</order>
+        <order>2</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:12</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a23dc561133fc4907cbd30128144b098</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2204,7 +3972,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>124ba9d8-31d1-4a28-8e1a-afdcba1fa941</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a23dc561133fc4907cbd30128144b098"/>
@@ -2282,14 +4050,14 @@
         <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>4</order>
+        <order>6</order>
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 18:22:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a23dc561133fc4907cbd30128144b0ad</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2297,7 +4065,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
         <ui_id>5bcff7fd-d8d7-4669-b300-442a9ef767f0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a23dc561133fc4907cbd30128144b0ad"/>
@@ -2361,14 +4129,14 @@
         <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
-        <order>7</order>
-        <parent_ui_id/>
+        <order>10.1</order>
+        <parent_ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bdcfaf3e137f00d07cbd30128144b070</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2376,7 +4144,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-10 18:04:39</sys_updated_on>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
         <ui_id>4cf212dd-5313-42ea-b756-2c7bba4d5c00</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=bdcfaf3e137f00d07cbd30128144b070"/>
@@ -2387,12 +4155,295 @@
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-31 03:24:49</sys_created_on>
         <sys_id>7dcfaf3e137f00d07cbd30128144b071</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
+        <value>Removing number {{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}  from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=263dc561133fc4907cbd30128144b052^sys_idNOT IN2e046744133410507cbd30128144b0b5,6e046744133410507cbd30128144b0b2,a2046744133410507cbd30128144b0ee,a6046744133410507cbd30128144b0e9,e6046744133410507cbd30128144b0f0,f2046744133410507cbd30128144b0f2"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">e09d9fc813f010507cbd30128144b09a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>availablephonenumber</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2e046744133410507cbd30128144b0b5</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>0a80b334-386b-4c13-83d5-ae60b4befbc3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2e046744133410507cbd30128144b0b5"/>
+    <sys_element_mapping action="delete_multiple" query="id=2e046744133410507cbd30128144b0b5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>availablephonenumber</field>
+        <id>2e046744133410507cbd30128144b0b5</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>2e046744133410507cbd30128144b0e8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-03-31 03:24:49</sys_updated_on>
-        <table>var__m_sys_hub_action_input_5bc1bcc6531003003bf1d9109ec587d4</table>
-        <value>Removing number {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}} from list of available phone numbers as it has been assigned to {{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.name}}</value>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052</table>
+        <value>{{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">bee36344133410507cbd30128144b041</block>
+        <comment>initiate with error</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6e046744133410507cbd30128144b0b2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>200c91b2-4582-47de-b492-ec98e7db607c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6e046744133410507cbd30128144b0b2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>6e046744133410507cbd30128144b0b2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>ee046744133410507cbd30128144b0b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>error</value>
+        <variable display_value="">62046744133410507cbd30128144b097</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0b402fcc13f010507cbd30128144b0d6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a2046744133410507cbd30128144b0ee</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
+        <ui_id>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a2046744133410507cbd30128144b0ee"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a2046744133410507cbd30128144b0ee</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>2e046744133410507cbd30128144b0ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>{{5bcff7fd-d8d7-4669-b300-442a9ef767f0.record.phone}}!={{21429091-5b33-411c-8af9-43bc692fba76.Record.u_phone_number}}</value>
+        <variable display_value="">9a5f5105c32632002841b63b12d3ae46</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b0a06700133410507cbd30128144b001</block>
+        <comment>Waiting for User table to get properly updated with available phone number.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>a6046744133410507cbd30128144b0e9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:21</sys_updated_on>
+        <ui_id>7b3f76d2-7265-479c-a0f2-6b338a7069b4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a6046744133410507cbd30128144b0e9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a6046744133410507cbd30128144b0e9</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>26046744133410507cbd30128144b0ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value/>
+        <variable display_value="">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a6046744133410507cbd30128144b0e9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>e6046744133410507cbd30128144b0ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>1970-01-01 00:02:00</value>
+        <variable display_value="">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">17402fcc13f010507cbd30128144b0e8</block>
+        <comment/>
+        <connected_to>4f029dfc-43ad-4a6d-8ddc-05531a7bae7e</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e6046744133410507cbd30128144b0f0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
+        <ui_id>c5d036b3-321f-4ed0-b051-1b785c9cb253</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e6046744133410507cbd30128144b0f0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">cfe36344133410507cbd30128144b060</block>
+        <comment>Update with success as complete sub-flow ran.</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <flow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</flow>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>11</order>
+        <outputs_assigned>result_status</outputs_assigned>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f2046744133410507cbd30128144b0f2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 07:06:22</sys_updated_on>
+        <ui_id>cd4922c7-beb0-42bd-912c-a4d75f35d7bd</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f2046744133410507cbd30128144b0f2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f2046744133410507cbd30128144b0f2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:02</sys_created_on>
+        <sys_id>7a046744133410507cbd30128144b0f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:02</sys_updated_on>
+        <value>success</value>
+        <variable display_value="">62046744133410507cbd30128144b097</variable>
+    </sys_variable_value>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052^sys_idNOT IN623dc561133fc4907cbd30128144b07f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>user_id</element>
@@ -2416,6 +4467,57 @@
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052_user_id_en</sys_update_name>
         <sys_updated_by>psharma</sys_updated_by>
         <sys_updated_on>2020-03-26 18:22:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052^sys_idNOT IN22046744133410507cbd30128144b088,6e046744133410507cbd30128144b09e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>availablephonenumber</element>
+        <help/>
+        <hint/>
+        <label>Available Phone Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>22046744133410507cbd30128144b088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Available Phone Number</sys_name>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052_availablephonenumber_en</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result_status</element>
+        <help/>
+        <hint/>
+        <label>Success Or Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-05-11 06:33:01</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6e046744133410507cbd30128144b09e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Success Or Error</sys_name>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_263dc561133fc4907cbd30128144b052_result_status_en</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-05-11 06:33:01</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
