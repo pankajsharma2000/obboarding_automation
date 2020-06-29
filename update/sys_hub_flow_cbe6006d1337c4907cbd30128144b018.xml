@@ -6,16 +6,18 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
+        <compiler_build>glide-orlando-12-11-2019__patch3-04-22-2020</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <internal_name>user_onboarding</internal_name>
         <label_cache>[{"name":"4be7db4c-1a1c-470a-8a49-74ace2d58a67.availablephonenumber","label":"2➛Available Phone Number","reference_display":"Available Phone Number","type":"string","base_type":"string"},{"name":"4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status","label":"2➛Success Or Error","reference_display":"Success Or Error","type":"string","base_type":"string"},{"name":"bd2e3a7b-52a5-4b51-afc9-7de06aae677d.variable","label":"1➛output","reference_display":"output","type":"string","base_type":"string"},{"name":"bd2e3a7b-52a5-4b51-afc9-7de06aae677d.variable1","label":"1➛error message","reference_display":"error message","type":"string","base_type":"string"},{"name":"Created_1.current.user_name","label":"Trigger➛User Record➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"359b9d3a-670b-4cf5-81cc-3232d8b0bcf5.total_duration","label":"6➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration"},{"name":"359b9d3a-670b-4cf5-81cc-3232d8b0bcf5.scheduled_end_date_time","label":"6➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"98a920b2-6089-45ef-aaab-3175b81cf319.variable","label":"9➛output","reference_display":"output","type":"string","base_type":"string"},{"name":"98a920b2-6089-45ef-aaab-3175b81cf319.variable1","label":"9➛error message","reference_display":"error message","type":"string","base_type":"string"},{"name":"Created_1.current.email","label":"Trigger➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.phone","label":"Trigger➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"},{"name":"07f4ae84-dec6-44bf-8e38-6f00240c9225.Record","label":"4➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"},{"name":"07f4ae84-dec6-44bf-8e38-6f00240c9225.Table","label":"4➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name"},{"name":"Created_1.current.name","label":"Trigger➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current","label":"Trigger➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"399343d8-5dfd-402f-a8ce-79c7e7482564.variable","label":"8➛phone_number","reference_display":"phone_number","type":"string","base_type":"string"}]</label_cache>
-        <latest_snapshot>33429d7213bfcc907cbd30128144b04c</latest_snapshot>
+        <latest_snapshot>ececc94b136d1c507cbd30128144b066</latest_snapshot>
         <master_snapshot>33429d7213bfcc907cbd30128144b04c</master_snapshot>
         <name>User Onboarding</name>
+        <natlang/>
         <outputs/>
-        <remote_trigger_id>6a99f7c413b410507cbd30128144b0e3</remote_trigger_id>
+        <remote_trigger_id>4a70450713a110908907dd828144b049</remote_trigger_id>
         <run_as>system</run_as>
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
@@ -27,7 +29,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>cbe6006d1337c4907cbd30128144b018</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>User Onboarding</sys_name>
         <sys_overrides/>
         <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
@@ -36,17 +38,16 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name>sys_hub_flow_cbe6006d1337c4907cbd30128144b018</sys_update_name>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:23</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:16</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_variable_value action="delete_multiple" query="document_key=cbe6006d1337c4907cbd30128144b018"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="sys_user">user_nameISNOTEMPTY^u_status=Active^employee_numberISNOTEMPTY^emailISNOTEMPTY^u_office="RO"<item endquery="false" field="user_name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <condition table="sys_user">user_nameISNOTEMPTY^u_status=Active^employee_numberISNOTEMPTY^emailISNOTEMPTY<item endquery="false" field="user_name" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item display_value="Active" endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="Active"/>
             <item endquery="false" field="employee_number" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="email" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
-            <item endquery="false" field="u_office" goto="false" newquery="false" operator="=" or="false" value="&quot;RO&quot;"/>
         </condition>
         <name/>
         <on_delete>false</on_delete>
@@ -58,10 +59,10 @@
         <run_when_user_setting>any</run_when_user_setting>
         <sys_class_name>sys_flow_record_trigger</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
-        <sys_created_on>2020-05-11 08:07:14</sys_created_on>
+        <sys_created_on>2020-06-26 09:07:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
-        <sys_id>6a99f7c413b410507cbd30128144b0e3</sys_id>
+        <sys_id>4a70450713a110908907dd828144b049</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
@@ -71,7 +72,7 @@
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:07:14</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:14</sys_updated_on>
         <table>sys_user</table>
     </sys_flow_record_trigger>
     <sys_hub_flow_component action="delete_multiple" query="flow=cbe6006d1337c4907cbd30128144b018^sys_idNOT IN09eaeb76137f00d07cbd30128144b0b8,0ba52f48133410507cbd30128144b0c5,0c67fbc013b410507cbd30128144b047,0c6f8965133fc4907cbd30128144b0ee,375f8965133fc4907cbd30128144b0af,3afeebc4137410507cbd30128144b0df,3b5f8965133fc4907cbd30128144b0b2,846f8965133fc4907cbd30128144b0ea,9ef91ffa13fb00d07cbd30128144b079,cc3c2bf6137f00d07cbd30128144b07e,fad5993e13bfcc907cbd30128144b012"/>
@@ -81,7 +82,7 @@
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>7</order>
@@ -91,15 +92,15 @@
         <sys_created_on>2020-03-31 03:03:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>09eaeb76137f00d07cbd30128144b0b8</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>7831ecf6-36d8-40f7-b682-329bd23efd5d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=09eaeb76137f00d07cbd30128144b0b8"/>
@@ -134,7 +135,7 @@
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>3</order>
@@ -144,15 +145,15 @@
         <sys_created_on>2020-05-11 06:40:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0ba52f48133410507cbd30128144b0c5</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>58fe1a6c-de3e-447e-8e9b-4e4c1756530d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0ba52f48133410507cbd30128144b0c5"/>
@@ -189,7 +190,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
         <action_type_parent/>
         <comment>Wait till the time start date us just a week away.</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>d3f92c160b10030085c083eb37673a7f</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>1</order>
@@ -199,15 +200,15 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-05-11 07:57:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0c67fbc013b410507cbd30128144b047</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>b5254e50-28de-4d85-afa5-aca568d3e3b3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c67fbc013b410507cbd30128144b047"/>
@@ -346,7 +347,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>11</order>
@@ -356,15 +357,15 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0c6f8965133fc4907cbd30128144b0ee</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>3046adb7-9b97-41c5-a20d-5ec1686328a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c6f8965133fc4907cbd30128144b0ee"/>
@@ -511,7 +512,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>375f8965133fc4907cbd30128144b0af</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -519,7 +520,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:15</sys_updated_on>
         <ui_id>4be7db4c-1a1c-470a-8a49-74ace2d58a67</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=375f8965133fc4907cbd30128144b0af"/>
@@ -542,7 +543,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>5</order>
@@ -552,15 +553,15 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-05-11 07:20:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3afeebc4137410507cbd30128144b0df</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>4b455d77-9355-4c69-9664-cdca39dea9e2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3afeebc4137410507cbd30128144b0df"/>
@@ -672,12 +673,13 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <value/>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0fa52f48133410507cbd30128144b0cb</block>
+        <block display_value="">3fbef44313a110908907dd828144b0ca</block>
         <comment>We are waiting for 5 minutes to make sure user record is properly updated with phone number from Available Phone Number table.</comment>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <inputs/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
@@ -690,7 +692,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3b5f8965133fc4907cbd30128144b0b2</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -698,7 +700,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:15</sys_updated_on>
         <ui_id>359b9d3a-670b-4cf5-81cc-3232d8b0bcf5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -738,7 +740,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Update Teams Number">41fcbd1813af84108907dd828144b0de</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>41fcbd1813af84108907dd828144b0de</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>9</order>
@@ -748,15 +750,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>846f8965133fc4907cbd30128144b0ea</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>98a920b2-6089-45ef-aaab-3175b81cf319</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=846f8965133fc4907cbd30128144b0ea"/>
@@ -815,7 +817,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Phone number clean up">7309d3ba13fb00d07cbd30128144b0d5</action_type>
         <action_type_parent/>
         <comment>Removes special characters, spaces and letters. But, does NOT verify length of the phone number.</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>7309d3ba13fb00d07cbd30128144b0d5</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>8</order>
@@ -825,15 +827,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 01:49:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ef91ffa13fb00d07cbd30128144b079</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>399343d8-5dfd-402f-a8ce-79c7e7482564</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9ef91ffa13fb00d07cbd30128144b079"/>
@@ -868,7 +870,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>10</order>
@@ -878,15 +880,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 03:09:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cc3c2bf6137f00d07cbd30128144b07e</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>3a559477-0447-4cc0-b87d-74278f2e790b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc3c2bf6137f00d07cbd30128144b07e"/>
@@ -921,7 +923,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
         <action_type_parent/>
         <comment>Create a ticket to update phone number in Lawson.</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>4</order>
@@ -931,15 +933,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 16:12:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fad5993e13bfcc907cbd30128144b012</sys_id>
-        <sys_mod_count>82</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>07f4ae84-dec6-44bf-8e38-6f00240c9225</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fad5993e13bfcc907cbd30128144b012"/>
@@ -1032,7 +1034,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 13:21:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>34684ced1337c4907cbd30128144b090</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1040,7 +1042,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:15</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -1069,10 +1071,10 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-26 13:21:27</sys_created_on>
         <sys_id>f4684ced1337c4907cbd30128144b091</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:06:55</sys_updated_on>
-        <value>user_nameISNOTEMPTY^u_status=Active^employee_numberISNOTEMPTY^emailISNOTEMPTY^u_office="RO"</value>
+        <sys_updated_on>2020-06-26 08:59:42</sys_updated_on>
+        <value>user_nameISNOTEMPTY^u_status=Active^employee_numberISNOTEMPTY^emailISNOTEMPTY</value>
         <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=cbe6006d1337c4907cbd30128144b018^sys_idNOT IN47e6006d1337c4907cbd30128144b01b"/>
@@ -1158,7 +1160,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 13:21:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>78684ced1337c4907cbd30128144b070</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1166,7 +1168,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:21</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1241,7 +1243,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 13:21:26</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f86844ad1337c4907cbd30128144b08e</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>25</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -1249,7 +1251,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:21</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1268,7 +1270,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>7</order>
@@ -1278,15 +1280,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 03:03:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>09eaeb76137f00d07cbd30128144b0b8</sys_id>
-        <sys_mod_count>64</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>7831ecf6-36d8-40f7-b682-329bd23efd5d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=09eaeb76137f00d07cbd30128144b0b8"/>
@@ -1321,7 +1323,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>3</order>
@@ -1331,15 +1333,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-05-11 06:40:09</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0ba52f48133410507cbd30128144b0c5</sys_id>
-        <sys_mod_count>42</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>58fe1a6c-de3e-447e-8e9b-4e4c1756530d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0ba52f48133410507cbd30128144b0c5"/>
@@ -1376,7 +1378,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <action_type display_value="Wait For Condition">d3f92c160b10030085c083eb37673a7f</action_type>
         <action_type_parent/>
         <comment>Wait till the time start date us just a week away.</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>d3f92c160b10030085c083eb37673a7f</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>1</order>
@@ -1386,15 +1388,15 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-05-11 07:57:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0c67fbc013b410507cbd30128144b047</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>b5254e50-28de-4d85-afa5-aca568d3e3b3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c67fbc013b410507cbd30128144b047"/>
@@ -1533,7 +1535,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>11</order>
@@ -1543,15 +1545,15 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>0c6f8965133fc4907cbd30128144b0ee</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>3046adb7-9b97-41c5-a20d-5ec1686328a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0c6f8965133fc4907cbd30128144b0ee"/>
@@ -1690,7 +1692,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>5</order>
@@ -1700,15 +1702,15 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-05-11 07:20:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3afeebc4137410507cbd30128144b0df</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>4b455d77-9355-4c69-9664-cdca39dea9e2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=3afeebc4137410507cbd30128144b0df"/>
@@ -1825,7 +1827,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Update Teams Number">41fcbd1813af84108907dd828144b0de</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>41fcbd1813af84108907dd828144b0de</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>9</order>
@@ -1835,15 +1837,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>846f8965133fc4907cbd30128144b0ea</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>106</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>98a920b2-6089-45ef-aaab-3175b81cf319</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=846f8965133fc4907cbd30128144b0ea"/>
@@ -1902,7 +1904,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Phone number clean up">7309d3ba13fb00d07cbd30128144b0d5</action_type>
         <action_type_parent/>
         <comment>Removes special characters, spaces and letters. But, does NOT verify length of the phone number.</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>7309d3ba13fb00d07cbd30128144b0d5</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>8</order>
@@ -1912,15 +1914,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 01:49:33</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>9ef91ffa13fb00d07cbd30128144b079</sys_id>
-        <sys_mod_count>76</sys_mod_count>
+        <sys_mod_count>84</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>399343d8-5dfd-402f-a8ce-79c7e7482564</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=9ef91ffa13fb00d07cbd30128144b079"/>
@@ -1955,7 +1957,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>10</order>
@@ -1965,15 +1967,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 03:09:08</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cc3c2bf6137f00d07cbd30128144b07e</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>3a559477-0447-4cc0-b87d-74278f2e790b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc3c2bf6137f00d07cbd30128144b07e"/>
@@ -2008,7 +2010,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
         <action_type_parent/>
         <comment>Create a ticket to update phone number in Lawson.</comment>
-        <compiled_snapshot/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
         <display_text/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <order>4</order>
@@ -2018,15 +2020,15 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 16:12:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>fad5993e13bfcc907cbd30128144b012</sys_id>
-        <sys_mod_count>82</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
-        <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2020-06-26 10:01:35</sys_updated_on>
         <ui_id>07f4ae84-dec6-44bf-8e38-6f00240c9225</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fad5993e13bfcc907cbd30128144b012"/>
@@ -2122,7 +2124,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>375f8965133fc4907cbd30128144b0af</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>104</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2130,7 +2132,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:15</sys_updated_on>
         <ui_id>4be7db4c-1a1c-470a-8a49-74ace2d58a67</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=375f8965133fc4907cbd30128144b0af"/>
@@ -2149,12 +2151,13 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="delete_multiple" query="flow=cbe6006d1337c4907cbd30128144b018^sys_idNOT IN3b5f8965133fc4907cbd30128144b0b2"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0fa52f48133410507cbd30128144b0cb</block>
+        <block display_value="">3fbef44313a110908907dd828144b0ca</block>
         <comment>We are waiting for 5 minutes to make sure user record is properly updated with phone number from Available Phone Number table.</comment>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</flow>
         <inputs/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
@@ -2167,7 +2170,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-26 18:31:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3b5f8965133fc4907cbd30128144b0b2</sys_id>
-        <sys_mod_count>55</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2175,7 +2178,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:22</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:15</sys_updated_on>
         <ui_id>359b9d3a-670b-4cf5-81cc-3232d8b0bcf5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2224,12 +2227,12 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>34684ced1337c4907cbd30128144b075</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cbe6006d1337c4907cbd30128144b018_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
         <sys_updated_on>2020-03-26 13:21:26</sys_updated_on>
         <url/>
@@ -2249,12 +2252,12 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>74684ced1337c4907cbd30128144b06f</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_cbe6006d1337c4907cbd30128144b018_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
         <sys_updated_on>2020-03-26 13:21:26</sys_updated_on>
         <url/>
@@ -2263,16 +2266,16 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=cbe6006d1337c4907cbd30128144b018^sys_idNOT INa852dd7213bfcc907cbd30128144b00b"/>
     <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
-        <plan/>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"a852dd7213bfcc907cbd30128144b00b","name":"plan"}}</plan>
         <plan_id>cbe6006d1337c4907cbd30128144b018</plan_id>
-        <snapshot>33429d7213bfcc907cbd30128144b04c</snapshot>
+        <snapshot>ececc94b136d1c507cbd30128144b066</snapshot>
         <sys_class_name>sys_flow_trigger_plan</sys_class_name>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-30 15:56:52</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>a852dd7213bfcc907cbd30128144b00b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2281,8 +2284,8 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:07:14</sys_updated_on>
-        <trigger display_value="">6a99f7c413b410507cbd30128144b0e3</trigger>
+        <sys_updated_on>2020-06-26 09:07:14</sys_updated_on>
+        <trigger display_value="">4a70450713a110908907dd828144b049</trigger>
     </sys_flow_trigger_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2295,9 +2298,10 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <copied_from_name/>
         <description/>
         <internal_name>user_onboarding</internal_name>
-        <label_cache>[{"name":"bd2e3a7b-52a5-4b51-afc9-7de06aae677d.variable","label":"1➛output","reference_display":"output","type":"string","base_type":"string"},{"name":"bd2e3a7b-52a5-4b51-afc9-7de06aae677d.variable1","label":"1➛error message","reference_display":"error message","type":"string","base_type":"string"},{"name":"Created_1.current.user_name","label":"Trigger➛User Record➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"359b9d3a-670b-4cf5-81cc-3232d8b0bcf5.total_duration","label":"2➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration"},{"name":"359b9d3a-670b-4cf5-81cc-3232d8b0bcf5.scheduled_end_date_time","label":"2➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"98a920b2-6089-45ef-aaab-3175b81cf319.variable","label":"3➛output","type":"string","base_type":"string"},{"name":"98a920b2-6089-45ef-aaab-3175b81cf319.variable1","label":"3➛error message","type":"string","base_type":"string"},{"name":"Created_1.current.email","label":"Trigger➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.phone","label":"Trigger➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"}]</label_cache>
+        <label_cache>[{"name":"4be7db4c-1a1c-470a-8a49-74ace2d58a67.availablephonenumber","label":"2➛Available Phone Number","reference_display":"Available Phone Number","type":"string","base_type":"string"},{"name":"4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status","label":"2➛Success Or Error","reference_display":"Success Or Error","type":"string","base_type":"string"},{"name":"bd2e3a7b-52a5-4b51-afc9-7de06aae677d.variable","label":"1➛output","reference_display":"output","type":"string","base_type":"string"},{"name":"bd2e3a7b-52a5-4b51-afc9-7de06aae677d.variable1","label":"1➛error message","reference_display":"error message","type":"string","base_type":"string"},{"name":"Created_1.current.user_name","label":"Trigger➛User Record➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"359b9d3a-670b-4cf5-81cc-3232d8b0bcf5.total_duration","label":"6➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration"},{"name":"359b9d3a-670b-4cf5-81cc-3232d8b0bcf5.scheduled_end_date_time","label":"6➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time"},{"name":"98a920b2-6089-45ef-aaab-3175b81cf319.variable","label":"9➛output","reference_display":"output","type":"string","base_type":"string"},{"name":"98a920b2-6089-45ef-aaab-3175b81cf319.variable1","label":"9➛error message","reference_display":"error message","type":"string","base_type":"string"},{"name":"Created_1.current.email","label":"Trigger➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.phone","label":"Trigger➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"},{"name":"07f4ae84-dec6-44bf-8e38-6f00240c9225.Record","label":"4➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference"},{"name":"07f4ae84-dec6-44bf-8e38-6f00240c9225.Table","label":"4➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name"},{"name":"Created_1.current.name","label":"Trigger➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current","label":"Trigger➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference"},{"name":"399343d8-5dfd-402f-a8ce-79c7e7482564.variable","label":"8➛phone_number","reference_display":"phone_number","type":"string","base_type":"string"}]</label_cache>
         <master>true</master>
         <name>User Onboarding</name>
+        <natlang/>
         <outputs/>
         <parent_flow display_value="User Onboarding">cbe6006d1337c4907cbd30128144b018</parent_flow>
         <remote_trigger_id/>
@@ -2310,7 +2314,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>33429d7213bfcc907cbd30128144b04c</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -2319,7 +2323,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:19</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:06</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow_snapshot>
     <sys_variable_value action="delete_multiple" query="document_key=33429d7213bfcc907cbd30128144b04c"/>
@@ -2340,7 +2344,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 16:14:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1066597e13bfcc907cbd30128144b02a</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2348,7 +2352,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>07f4ae84-dec6-44bf-8e38-6f00240c9225</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1066597e13bfcc907cbd30128144b02a"/>
@@ -2407,7 +2411,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 03:10:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>247ceff6137f00d07cbd30128144b096</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2415,7 +2419,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>7831ecf6-36d8-40f7-b682-329bd23efd5d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=247ceff6137f00d07cbd30128144b096"/>
@@ -2448,7 +2452,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 03:10:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>247ceff6137f00d07cbd30128144b09a</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2456,7 +2460,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>3a559477-0447-4cc0-b87d-74278f2e790b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=247ceff6137f00d07cbd30128144b09a"/>
@@ -2489,7 +2493,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-05-11 07:21:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>381f2308137410507cbd30128144b002</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2497,7 +2501,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>4b455d77-9355-4c69-9664-cdca39dea9e2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=381f2308137410507cbd30128144b002"/>
@@ -2569,7 +2573,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>40529d7213bfcc907cbd30128144b0bd</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2577,7 +2581,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>4be7db4c-1a1c-470a-8a49-74ace2d58a67</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=40529d7213bfcc907cbd30128144b0bd"/>
@@ -2610,7 +2614,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4c529d7213bfcc907cbd30128144b0b8</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2618,7 +2622,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>3046adb7-9b97-41c5-a20d-5ec1686328a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4c529d7213bfcc907cbd30128144b0b8"/>
@@ -2703,7 +2707,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 01:50:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>703ad33e13fb00d07cbd30128144b030</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2711,7 +2715,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>399343d8-5dfd-402f-a8ce-79c7e7482564</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=703ad33e13fb00d07cbd30128144b030"/>
@@ -2744,7 +2748,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-05-11 07:59:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80f77b0413b410507cbd30128144b020</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2752,7 +2756,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>b5254e50-28de-4d85-afa5-aca568d3e3b3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=80f77b0413b410507cbd30128144b020"/>
@@ -2822,12 +2826,13 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <value/>
     </sys_element_mapping>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0fa52f48133410507cbd30128144b0cb</block>
+        <block display_value="">3fbef44313a110908907dd828144b0ca</block>
         <comment>We are waiting for 5 minutes to make sure user record is properly updated with phone number from Available Phone Number table.</comment>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="User Onboarding">33429d7213bfcc907cbd30128144b04c</flow>
         <inputs/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
@@ -2840,7 +2845,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8c529d7213bfcc907cbd30128144b0ad</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2848,7 +2853,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>359b9d3a-670b-4cf5-81cc-3232d8b0bcf5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -2898,7 +2903,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cc529d7213bfcc907cbd30128144b0b4</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2906,7 +2911,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>98a920b2-6089-45ef-aaab-3175b81cf319</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc529d7213bfcc907cbd30128144b0b4"/>
@@ -2951,7 +2956,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-05-11 07:21:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f41fefc4137410507cbd30128144b0fe</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2959,7 +2964,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>58fe1a6c-de3e-447e-8e9b-4e4c1756530d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f41fefc4137410507cbd30128144b0fe"/>
@@ -2989,7 +2994,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c0529d7213bfcc907cbd30128144b0bb</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>39</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -2997,7 +3002,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:21</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:14</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>
@@ -3026,10 +3031,10 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_by>psharma</sys_created_by>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_id>48529d7213bfcc907cbd30128144b0bc</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:07:10</sys_updated_on>
-        <value>user_nameISNOTEMPTY^u_status=Active^employee_numberISNOTEMPTY^emailISNOTEMPTY^u_office="RO"</value>
+        <sys_updated_on>2020-06-26 09:07:04</sys_updated_on>
+        <value>user_nameISNOTEMPTY^u_status=Active^employee_numberISNOTEMPTY^emailISNOTEMPTY</value>
         <variable display_value="">66aadea0c31322002841b63b12d3aebf</variable>
     </sys_variable_value>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=33429d7213bfcc907cbd30128144b04c^sys_idNOT IN33429d7213bfcc907cbd30128144b04d"/>
@@ -3115,7 +3120,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-30 15:56:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>b7429d7213bfcc907cbd30128144b04e</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3123,7 +3128,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:17</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3198,7 +3203,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c8529d7213bfcc907cbd30128144b0a3</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3206,7 +3211,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:17</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:04</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -3235,7 +3240,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-30 16:14:36</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>1066597e13bfcc907cbd30128144b02a</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3243,7 +3248,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>07f4ae84-dec6-44bf-8e38-6f00240c9225</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=1066597e13bfcc907cbd30128144b02a"/>
@@ -3302,7 +3307,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-31 03:10:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>247ceff6137f00d07cbd30128144b096</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3310,7 +3315,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>7831ecf6-36d8-40f7-b682-329bd23efd5d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=247ceff6137f00d07cbd30128144b096"/>
@@ -3343,7 +3348,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-31 03:10:15</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>247ceff6137f00d07cbd30128144b09a</sys_id>
-        <sys_mod_count>32</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3351,7 +3356,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>3a559477-0447-4cc0-b87d-74278f2e790b</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=247ceff6137f00d07cbd30128144b09a"/>
@@ -3384,7 +3389,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-05-11 07:21:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>381f2308137410507cbd30128144b002</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3392,7 +3397,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>4b455d77-9355-4c69-9664-cdca39dea9e2</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=381f2308137410507cbd30128144b002"/>
@@ -3466,7 +3471,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4c529d7213bfcc907cbd30128144b0b8</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3474,7 +3479,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>3046adb7-9b97-41c5-a20d-5ec1686328a0</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4c529d7213bfcc907cbd30128144b0b8"/>
@@ -3559,7 +3564,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-31 01:50:32</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>703ad33e13fb00d07cbd30128144b030</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3567,7 +3572,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>399343d8-5dfd-402f-a8ce-79c7e7482564</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=703ad33e13fb00d07cbd30128144b030"/>
@@ -3600,7 +3605,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-05-11 07:59:58</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>80f77b0413b410507cbd30128144b020</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3608,7 +3613,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>b5254e50-28de-4d85-afa5-aca568d3e3b3</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=80f77b0413b410507cbd30128144b020"/>
@@ -3693,7 +3698,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>cc529d7213bfcc907cbd30128144b0b4</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3701,7 +3706,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>98a920b2-6089-45ef-aaab-3175b81cf319</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cc529d7213bfcc907cbd30128144b0b4"/>
@@ -3746,7 +3751,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_created_on>2020-05-11 07:21:14</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f41fefc4137410507cbd30128144b0fe</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3754,7 +3759,7 @@ Business Phone Assigned = {{Created_1.current.phone}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>58fe1a6c-de3e-447e-8e9b-4e4c1756530d</ui_id>
     </sys_hub_action_instance>
     <sys_variable_value action="delete_multiple" query="document_key=f41fefc4137410507cbd30128144b0fe"/>
@@ -3787,7 +3792,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>40529d7213bfcc907cbd30128144b0bd</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3795,7 +3800,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>4be7db4c-1a1c-470a-8a49-74ace2d58a67</ui_id>
     </sys_hub_sub_flow_instance>
     <sys_variable_value action="delete_multiple" query="document_key=40529d7213bfcc907cbd30128144b0bd"/>
@@ -3814,12 +3819,13 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
     </sys_element_mapping>
     <sys_hub_flow_logic action="delete_multiple" query="flow=33429d7213bfcc907cbd30128144b04c^sys_idNOT IN8c529d7213bfcc907cbd30128144b0ad"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
-        <block display_value="">0fa52f48133410507cbd30128144b0cb</block>
+        <block display_value="">3fbef44313a110908907dd828144b0ca</block>
         <comment>We are waiting for 5 minutes to make sure user record is properly updated with phone number from Available Phone Number table.</comment>
         <connected_to/>
         <decision_table/>
         <decision_table_inputs/>
         <display_text/>
+        <extended_inputs/>
         <flow display_value="User Onboarding">33429d7213bfcc907cbd30128144b04c</flow>
         <inputs/>
         <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
@@ -3832,7 +3838,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_created_on>2020-03-30 15:56:50</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>8c529d7213bfcc907cbd30128144b0ad</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
@@ -3840,7 +3846,7 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
         <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
-        <sys_updated_on>2020-05-11 08:10:18</sys_updated_on>
+        <sys_updated_on>2020-06-26 09:07:05</sys_updated_on>
         <ui_id>359b9d3a-670b-4cf5-81cc-3232d8b0bcf5</ui_id>
         <workflow_inputs/>
         <workflow_reference/>
@@ -3889,12 +3895,12 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>00529d7213bfcc907cbd30128144b0a9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Table Name</sys_name>
+        <sys_name/>
         <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33429d7213bfcc907cbd30128144b04c_table_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
         <sys_updated_on>2020-03-30 15:56:50</sys_updated_on>
         <url/>
@@ -3914,12 +3920,12 @@ Result Output = {{4be7db4c-1a1c-470a-8a49-74ace2d58a67.result_status}}</value>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>04529d7213bfcc907cbd30128144b054</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Record</sys_name>
+        <sys_name/>
         <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_33429d7213bfcc907cbd30128144b04c_current_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>psharma</sys_updated_by>
         <sys_updated_on>2020-03-30 15:56:49</sys_updated_on>
         <url/>

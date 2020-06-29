@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>test_flow</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>test flow</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-29 10:36:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>4a9130c413bd14908907dd828144b05d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_hub_flow_4a9130c413bd14908907dd828144b05d</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-29 10:36:10</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="DELETE" query="document_key=4a9130c413bd14908907dd828144b05d"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=4a9130c413bd14908907dd828144b05d^sys_idNOT IN8e9130c413bd14908907dd828144b05f"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>4a9130c413bd14908907dd828144b05d</id>
+        <name>test flow</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-29 10:36:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e9130c413bd14908907dd828144b05f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-29 10:36:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</application>
+        <file_path/>
+        <instance_id>cd1e7e986f7359406626a9cc5d3ee490</instance_id>
+        <instance_name>collegeboarddev</instance_name>
+        <name>sys_hub_flow_4a9130c413bd14908907dd828144b05d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>test_flow</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>test flow</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>psharma</sys_created_by><sys_created_on>2020-06-29 10:36:10</sys_created_on><sys_customer_update>false</sys_customer_update><sys_domain>global</sys_domain><sys_id>4a9130c413bd14908907dd828144b05d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test flow</sys_name><sys_overrides/><sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope><sys_update_name>sys_hub_flow_4a9130c413bd14908907dd828144b05d</sys_update_name><sys_updated_by>psharma</sys_updated_by><sys_updated_on>2020-06-29 10:36:10</sys_updated_on><type>flow</type></sys_hub_flow><sys_variable_value action="delete_multiple" query="document_key=4a9130c413bd14908907dd828144b05d"/><sys_flow_cat_variable_model action="delete_multiple" query="id=4a9130c413bd14908907dd828144b05d^sys_idNOT IN8e9130c413bd14908907dd828144b05f"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>4a9130c413bd14908907dd828144b05d</id><name>test flow</name><sys_class_name>sys_flow_cat_variable_model</sys_class_name><sys_created_by>psharma</sys_created_by><sys_created_on>2020-06-29 10:36:10</sys_created_on><sys_customer_update>false</sys_customer_update><sys_id>8e9130c413bd14908907dd828144b05f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package/><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope><sys_update_name/><sys_updated_by>psharma</sys_updated_by><sys_updated_on>2020-06-29 10:36:10</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>946524112</payload_hash>
+        <record_name>test flow</record_name>
+        <reverted_from/>
+        <source>afcbb08b132110908907dd828144b0f1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-29 10:36:10</sys_created_on>
+        <sys_id>c69130c413bd14908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>172ffa608900000001</sys_recorded_at>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-29 10:36:10</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>8e9130c497bd1490cc01dd5ac19d8563</update_guid>
+        <update_guid_history>8e9130c497bd1490cc01dd5ac19d8563:946524112</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-29 10:52:57</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>47555c4ed4604f268832c5a56dc0a324</sys_id>
+        <sys_metadata>4a9130c413bd14908907dd828144b05d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test flow</sys_name>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_scope_delete display_value="">19a0fc852a7042a09496d7eb38180d84</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_4a9130c413bd14908907dd828144b05d</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_4a9130c413bd14908907dd828144b05d">c69130c413bd14908907dd828144b064</sys_update_version>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-29 10:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

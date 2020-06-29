@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="user_id" label="User ID" language="en" table="var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052">
+    <sys_documentation element="current" label="Record" language="en" table="var__m_sys_hub_flow_input_253c77881b309cd07ad8c8c11a4bcb17">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>user_id</element>
+            <element>current</element>
             <help/>
             <hint/>
-            <label>User ID</label>
+            <label>Record</label>
             <language>en</language>
-            <name>var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052</name>
+            <name>var__m_sys_hub_flow_input_253c77881b309cd07ad8c8c11a4bcb17</name>
             <plural/>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>psharma</sys_created_by>
-            <sys_created_on>2020-03-26 18:22:12</sys_created_on>
+            <sys_created_on>2020-05-11 08:18:40</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>623dc561133fc4907cbd30128144b07f</sys_id>
+            <sys_id>063cb7881b309cd07ad8c8c11a4bcb0b</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>User ID</sys_name>
+            <sys_name>Record</sys_name>
             <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
-            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052_user_id_en</sys_update_name>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_253c77881b309cd07ad8c8c11a4bcb17_current_en</sys_update_name>
             <sys_updated_by>psharma</sys_updated_by>
-            <sys_updated_on>2020-03-26 18:22:12</sys_updated_on>
+            <sys_updated_on>2020-05-11 08:18:40</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

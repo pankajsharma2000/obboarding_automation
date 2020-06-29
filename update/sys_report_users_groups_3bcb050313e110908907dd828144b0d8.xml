@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Count of available phone numbers per location">b3cb050313e110908907dd828144b0d8</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-26 09:56:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3bcb050313e110908907dd828144b0d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>b3cb050313e110908907dd828144b0d8</sys_name>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_report_users_groups_3bcb050313e110908907dd828144b0d8</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-26 09:56:47</sys_updated_on>
+        <user_id display_value="Pankaj Sharma">c6cc22aedb0980908937d36fdf96197c</user_id>
+    </sys_report_users_groups>
+</record_update>
