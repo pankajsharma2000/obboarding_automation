@@ -1,0 +1,3433 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Run once a day to assign phone numbers to all the users on-boarded is last 24 hours.</description>
+        <internal_name>scheduled__phone_assignment</internal_name>
+        <label_cache>[{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number","label":"2➛User Record➛Employee number","reference":"","reference_display":"Employee number","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"employee_number"},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status","label":"2➛User Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"sys_user","column_name":"u_status"},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.phone","label":"2➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"},{"name":"0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Table","label":"1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Records","label":"1➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name","label":"2➛User Record➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item","label":"2➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber","label":"2.3.1➛Available Phone Number","reference_display":"Available Phone Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6178b055-09b0-4b3f-b137-fd5acb092985"}},{"name":"d0068117-81c4-4a94-9f55-82abcda80341.result_status","label":"2.3.1➛Success Or Error","reference_display":"Success Or Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"75aaa5d5-21aa-4f2b-bedd-f35ea218bbd0"}},{"name":"9a6fdca0-793e-4424-9fd9-3a198304dd3c.Record","label":"2.3.2➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a6fdca0-793e-4424-9fd9-3a198304dd3c.Table","label":"2.3.2➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.name","label":"2➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"80c01c44-2b36-4e5c-af9d-772401b040d6.variable","label":"2.3.4➛phone_number","reference_display":"phone_number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable","label":"2.3.5➛output","reference_display":"output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable1","label":"2.3.5➛error message","reference_display":"error message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.email","label":"2➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"}]</label_cache>
+        <latest_snapshot>82393d10137594908907dd828144b04b</latest_snapshot>
+        <master_snapshot>82393d10137594908907dd828144b04b</master_snapshot>
+        <name>Scheduled - Phone Assignment</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>6a397d10137594908907dd828144b037</remote_trigger_id>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 08:58:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>b4c4edd013f194908907dd828144b08d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Scheduled - Phone Assignment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="onboarding_automation" source="x_llbo_onboarding">e71ebc4b137244108907dd828144b0af</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name>sys_hub_flow_b4c4edd013f194908907dd828144b08d</sys_update_name>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_variable_value action="delete_multiple" query="document_key=b4c4edd013f194908907dd828144b08d"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2020-06-30 10:27:37</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>6a397d10137594908907dd828144b037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:37</sys_updated_on>
+        <time>1970-01-02 04:59:59</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:6a397d10137594908907dd828144b037</name>
+        <run_as display_value="Pankaj Sharma">c6cc22aedb0980908937d36fdf96197c</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-06-30 10:27:37</run_start>
+        <run_time>1970-01-02 04:59:59</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('6a397d10137594908907dd828144b037');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ee397d10137594908907dd828144b037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:37</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">6a397d10137594908907dd828144b037</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_hub_flow_component action="delete_multiple" query="flow=b4c4edd013f194908907dd828144b08d^sys_idNOT IN05043998133594908907dd828144b085,055dad10133594908907dd828144b020,095dad10133594908907dd828144b023,16003514133594908907dd828144b016,32437558133594908907dd828144b0df,3f28ed9813f194908907dd828144b066,4a003514133594908907dd828144b012,4cd83110137594908907dd828144b0cb,855d2910133594908907dd828144b060,c2003514133594908907dd828144b00f,c4d83110137594908907dd828144b0bb,e19ea590133594908907dd828144b078,f2437558133594908907dd828144b0a9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d043998133594908907dd828144b084</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>2.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:04:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>05043998133594908907dd828144b085</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=05043998133594908907dd828144b085"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.2</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>055dad10133594908907dd828144b020</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>9a6fdca0-793e-4424-9fd9-3a198304dd3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=055dad10133594908907dd828144b020"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>055dad10133594908907dd828144b020</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>055dad10133594908907dd828144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=055dad10133594908907dd828144b020"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>055dad10133594908907dd828144b020</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>815dad10133594908907dd828144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Lawson","value":"bf66d3836f88fa007cbb30444b3ee4e4"}^u_importance=Standard^u_service=Office Phone Support^subcategory=Lawson^short_description=Please update {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} phone number in Lawson to be {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} .</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>055dad10133594908907dd828144b020</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>cd5dad10133594908907dd828144b021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d5dad10133594908907dd828144b022</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>095dad10133594908907dd828144b023</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=095dad10133594908907dd828144b023"/>
+    <sys_element_mapping action="delete_multiple" query="id=095dad10133594908907dd828144b023"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>095dad10133594908907dd828144b023</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>855dad10133594908907dd828144b026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.6</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16003514133594908907dd828144b016</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>29272f52-3b08-4b3c-98b1-57f89f33446d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=16003514133594908907dd828144b016"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>16003514133594908907dd828144b016</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>d2003514133594908907dd828144b018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=16003514133594908907dd828144b016"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>16003514133594908907dd828144b016</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>da003514133594908907dd828144b017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams Output: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable}}
+
+MS Teams Error Message: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>16003514133594908907dd828144b016</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>9e003514133594908907dd828144b017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} is assigned {{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>16003514133594908907dd828144b016</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>52003514133594908907dd828144b018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b6437558133594908907dd828144b0de</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>32437558133594908907dd828144b0df</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=32437558133594908907dd828144b0df"/>
+    <sys_element_mapping action="delete_multiple" query="id=32437558133594908907dd828144b0df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>32437558133594908907dd828144b0df</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>c3437558133594908907dd828144b0e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}!=Active^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}=</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3f28ed9813f194908907dd828144b066</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>0590cf61-8d4f-4ec8-a71d-134ffbbce51c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3f28ed9813f194908907dd828144b066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f28ed9813f194908907dd828144b066</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_id>3328ed9813f194908907dd828144b069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:13:09</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f28ed9813f194908907dd828144b066</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_id>7f28ed9813f194908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:13:09</sys_updated_on>
+        <value>sys_created_onRELATIVEGT@hour@ago@24</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Teams Number">41fcbd1813af84108907dd828144b0de</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.5</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4a003514133594908907dd828144b012</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>8d46d545-222f-45fd-ad4c-8ccb6c7533d8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a003514133594908907dd828144b012"/>
+    <sys_element_mapping action="delete_multiple" query="id=4a003514133594908907dd828144b012"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>4a003514133594908907dd828144b012</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>52003514133594908907dd828144b014</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>4a003514133594908907dd828144b012</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>9e003514133594908907dd828144b013</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0cd83110137594908907dd828144b0be</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4cd83110137594908907dd828144b0cb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4cd83110137594908907dd828144b0cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4cd83110137594908907dd828144b0cb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>ccd83110137594908907dd828144b0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <value>User already has a phone number.</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4cd83110137594908907dd828144b0cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4cd83110137594908907dd828144b0cb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>4cd83110137594908907dd828144b0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4cd83110137594908907dd828144b0cb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>88d83110137594908907dd828144b0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.3.1</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <subflow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>855d2910133594908907dd828144b060</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>d0068117-81c4-4a94-9f55-82abcda80341</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=855d2910133594908907dd828144b060"/>
+    <sys_element_mapping action="delete_multiple" query="id=855d2910133594908907dd828144b060"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_id</field>
+        <id>855d2910133594908907dd828144b060</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:37</sys_created_on>
+        <sys_id>455d2910133594908907dd828144b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Phone number clean up">7309d3ba13fb00d07cbd30128144b0d5</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.4</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2003514133594908907dd828144b00f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>80c01c44-2b36-4e5c-af9d-772401b040d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c2003514133594908907dd828144b00f"/>
+    <sys_element_mapping action="delete_multiple" query="id=c2003514133594908907dd828144b00f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>c2003514133594908907dd828144b00f</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>86003514133594908907dd828144b010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7309d3ba13fb00d07cbd30128144b0d5</table>
+        <value>{{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c4d83110137594908907dd828144b0bb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>63302120-eb41-4bc9-a98b-3a650f6499ae</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c4d83110137594908907dd828144b0bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c4d83110137594908907dd828144b0bb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>80d83110137594908907dd828144b0be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c4d83110137594908907dd828144b0bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c4d83110137594908907dd828144b0bb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>84d83110137594908907dd828144b0bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User already has a phone number {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}} and will not be assigned another one.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c4d83110137594908907dd828144b0bb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>4cd83110137594908907dd828144b0bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} already has a phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c4d83110137594908907dd828144b0bb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>00d83110137594908907dd828144b0be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.3</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e19ea590133594908907dd828144b078</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>bed24f52-f850-413f-91e3-e28ca8fb26b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e19ea590133594908907dd828144b078"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e19ea590133594908907dd828144b078</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>299ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e19ea590133594908907dd828144b078"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>e19ea590133594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>219ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Made change in SN User table and opened ticket in lawson. 
+User = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}},
+Available Phone = {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}
+Business Phone Assigned = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>e19ea590133594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>e19ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} will be assigned {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>e19ea590133594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>a59ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.1.1</order>
+        <parent_ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f2437558133594908907dd828144b0a9</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>419cfbae-1ed8-483f-a224-3f45ac72daf1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f2437558133594908907dd828144b0a9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f2437558133594908907dd828144b0a9</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>fa437558133594908907dd828144b0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f2437558133594908907dd828144b0a9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>f2437558133594908907dd828144b0a9</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>fe437558133594908907dd828144b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Following fields are must and can not be empty in or to get a phone assigned:
+User ID: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}
+Employee Number: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}
+Email: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}
+Status: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>f2437558133594908907dd828144b0a9</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>b6437558133594908907dd828144b0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Phone will not be assigned to  {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>f2437558133594908907dd828144b0a9</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>7a437558133594908907dd828144b0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=b4c4edd013f194908907dd828144b08d^sys_idNOT IN3f28ed9813f194908907dd828144b062"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3f28ed9813f194908907dd828144b062</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:37</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3f28ed9813f194908907dd828144b062"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3f28ed9813f194908907dd828144b062</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_id>b328ed9813f194908907dd828144b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:13:09</sys_updated_on>
+        <value>1970-01-01 23:59:59</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b4c4edd013f194908907dd828144b08d^sys_idNOT IN78c4edd013f194908907dd828144b090"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b4c4edd013f194908907dd828144b08d</id>
+        <name>Scheduled - Phone Assignment</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 08:58:12</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>78c4edd013f194908907dd828144b090</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 08:58:12</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=b4c4edd013f194908907dd828144b08d^sys_idNOT IN055dad10133594908907dd828144b020,16003514133594908907dd828144b016,3f28ed9813f194908907dd828144b066,4a003514133594908907dd828144b012,c2003514133594908907dd828144b00f,c4d83110137594908907dd828144b0bb,e19ea590133594908907dd828144b078,f2437558133594908907dd828144b0a9"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.2</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>055dad10133594908907dd828144b020</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>9a6fdca0-793e-4424-9fd9-3a198304dd3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=055dad10133594908907dd828144b020"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>055dad10133594908907dd828144b020</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>055dad10133594908907dd828144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=055dad10133594908907dd828144b020"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>055dad10133594908907dd828144b020</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>815dad10133594908907dd828144b022</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Lawson","value":"bf66d3836f88fa007cbb30444b3ee4e4"}^u_importance=Standard^u_service=Office Phone Support^subcategory=Lawson^short_description=Please update {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} phone number in Lawson to be {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} .</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>055dad10133594908907dd828144b020</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>cd5dad10133594908907dd828144b021</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.6</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>16003514133594908907dd828144b016</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>29272f52-3b08-4b3c-98b1-57f89f33446d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=16003514133594908907dd828144b016"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>16003514133594908907dd828144b016</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>d2003514133594908907dd828144b018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=16003514133594908907dd828144b016"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>16003514133594908907dd828144b016</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>da003514133594908907dd828144b017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams Output: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable}}
+
+MS Teams Error Message: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>16003514133594908907dd828144b016</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>9e003514133594908907dd828144b017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} is assigned {{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>16003514133594908907dd828144b016</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>52003514133594908907dd828144b018</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>3f28ed9813f194908907dd828144b066</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>0590cf61-8d4f-4ec8-a71d-134ffbbce51c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3f28ed9813f194908907dd828144b066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f28ed9813f194908907dd828144b066</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_id>3328ed9813f194908907dd828144b069</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:13:09</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3f28ed9813f194908907dd828144b066</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:13:09</sys_created_on>
+        <sys_id>7f28ed9813f194908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:13:09</sys_updated_on>
+        <value>sys_created_onRELATIVEGT@hour@ago@24</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Teams Number">41fcbd1813af84108907dd828144b0de</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.5</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4a003514133594908907dd828144b012</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>8d46d545-222f-45fd-ad4c-8ccb6c7533d8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4a003514133594908907dd828144b012"/>
+    <sys_element_mapping action="delete_multiple" query="id=4a003514133594908907dd828144b012"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>4a003514133594908907dd828144b012</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>52003514133594908907dd828144b014</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>4a003514133594908907dd828144b012</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>9e003514133594908907dd828144b013</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Phone number clean up">7309d3ba13fb00d07cbd30128144b0d5</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.4</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2003514133594908907dd828144b00f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>80c01c44-2b36-4e5c-af9d-772401b040d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c2003514133594908907dd828144b00f"/>
+    <sys_element_mapping action="delete_multiple" query="id=c2003514133594908907dd828144b00f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>c2003514133594908907dd828144b00f</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:47:27</sys_created_on>
+        <sys_id>86003514133594908907dd828144b010</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:47:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7309d3ba13fb00d07cbd30128144b0d5</table>
+        <value>{{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c4d83110137594908907dd828144b0bb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>63302120-eb41-4bc9-a98b-3a650f6499ae</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c4d83110137594908907dd828144b0bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c4d83110137594908907dd828144b0bb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>80d83110137594908907dd828144b0be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c4d83110137594908907dd828144b0bb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c4d83110137594908907dd828144b0bb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>84d83110137594908907dd828144b0bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User already has a phone number {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}} and will not be assigned another one.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c4d83110137594908907dd828144b0bb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>4cd83110137594908907dd828144b0bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} already has a phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c4d83110137594908907dd828144b0bb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>00d83110137594908907dd828144b0be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.3.3</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e19ea590133594908907dd828144b078</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>bed24f52-f850-413f-91e3-e28ca8fb26b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e19ea590133594908907dd828144b078"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e19ea590133594908907dd828144b078</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>299ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e19ea590133594908907dd828144b078"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>e19ea590133594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>219ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Made change in SN User table and opened ticket in lawson. 
+User = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}},
+Available Phone = {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}
+Business Phone Assigned = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>e19ea590133594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>e19ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} will be assigned {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>e19ea590133594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:41:08</sys_created_on>
+        <sys_id>a59ea590133594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:41:08</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <order>2.1.1</order>
+        <parent_ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f2437558133594908907dd828144b0a9</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>419cfbae-1ed8-483f-a224-3f45ac72daf1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f2437558133594908907dd828144b0a9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f2437558133594908907dd828144b0a9</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>fa437558133594908907dd828144b0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f2437558133594908907dd828144b0a9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>f2437558133594908907dd828144b0a9</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>fe437558133594908907dd828144b0dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Following fields are must and can not be empty in or to get a phone assigned:
+User ID: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}
+Employee Number: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}
+Email: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}
+Status: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>f2437558133594908907dd828144b0a9</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>b6437558133594908907dd828144b0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Phone will not be assigned to  {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>f2437558133594908907dd828144b0a9</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>7a437558133594908907dd828144b0dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=b4c4edd013f194908907dd828144b08d^sys_idNOT IN855d2910133594908907dd828144b060"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.3.1</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <subflow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>855d2910133594908907dd828144b060</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>d0068117-81c4-4a94-9f55-82abcda80341</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=855d2910133594908907dd828144b060"/>
+    <sys_element_mapping action="delete_multiple" query="id=855d2910133594908907dd828144b060"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_id</field>
+        <id>855d2910133594908907dd828144b060</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:37</sys_created_on>
+        <sys_id>455d2910133594908907dd828144b062</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:37</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=b4c4edd013f194908907dd828144b08d^sys_idNOT IN05043998133594908907dd828144b085,095dad10133594908907dd828144b023,32437558133594908907dd828144b0df,4cd83110137594908907dd828144b0cb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d043998133594908907dd828144b084</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>2.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:04:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>05043998133594908907dd828144b085</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=05043998133594908907dd828144b085"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d5dad10133594908907dd828144b022</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>095dad10133594908907dd828144b023</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=095dad10133594908907dd828144b023"/>
+    <sys_element_mapping action="delete_multiple" query="id=095dad10133594908907dd828144b023"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>095dad10133594908907dd828144b023</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 09:35:38</sys_created_on>
+        <sys_id>855dad10133594908907dd828144b026</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 09:35:38</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b6437558133594908907dd828144b0de</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>32437558133594908907dd828144b0df</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=32437558133594908907dd828144b0df"/>
+    <sys_element_mapping action="delete_multiple" query="id=32437558133594908907dd828144b0df"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>32437558133594908907dd828144b0df</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:01:42</sys_created_on>
+        <sys_id>c3437558133594908907dd828144b0e2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:01:42</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}!=Active^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}=</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0cd83110137594908907dd828144b0be</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4cd83110137594908907dd828144b0cb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:38</sys_updated_on>
+        <ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4cd83110137594908907dd828144b0cb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4cd83110137594908907dd828144b0cb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>ccd83110137594908907dd828144b0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <value>User already has a phone number.</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4cd83110137594908907dd828144b0cb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4cd83110137594908907dd828144b0cb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>4cd83110137594908907dd828144b0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4cd83110137594908907dd828144b0cb</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:25:48</sys_created_on>
+        <sys_id>88d83110137594908907dd828144b0ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:25:48</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=b4c4edd013f194908907dd828144b08d^sys_idNOT INbe397d10137594908907dd828144b039"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>b4c4edd013f194908907dd828144b08d</plan_id>
+        <snapshot>82393d10137594908907dd828144b04b</snapshot>
+        <sys_class_name>sys_flow_trigger_plan</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:37</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>be397d10137594908907dd828144b039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:37</sys_updated_on>
+        <trigger display_value="">6a397d10137594908907dd828144b037</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Run once a day to assign phone numbers to all the users on-boarded is last 24 hours.</description>
+        <internal_name>scheduled__phone_assignment</internal_name>
+        <label_cache>[{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number","label":"2➛User Record➛Employee number","reference":"","reference_display":"Employee number","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"employee_number"},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status","label":"2➛User Record➛Status","reference":"","reference_display":"Status","type":"choice","base_type":"choice","parent_table_name":"sys_user","column_name":"u_status"},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.phone","label":"2➛User Record➛Business phone","reference":"","reference_display":"Business phone","type":"ph_number","base_type":"ph_number","parent_table_name":"sys_user","column_name":"phone"},{"name":"0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Count","label":"1➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Table","label":"1➛User Table","reference":"sys_user","reference_display":"User","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Records","label":"1➛User Records","reference":"sys_user","reference_display":"User","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name","label":"2➛User Record➛User ID","reference":"","reference_display":"User ID","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"user_name"},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item","label":"2➛User Record","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber","label":"2.3.1➛Available Phone Number","reference_display":"Available Phone Number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6178b055-09b0-4b3f-b137-fd5acb092985"}},{"name":"d0068117-81c4-4a94-9f55-82abcda80341.result_status","label":"2.3.1➛Success Or Error","reference_display":"Success Or Error","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"75aaa5d5-21aa-4f2b-bedd-f35ea218bbd0"}},{"name":"9a6fdca0-793e-4424-9fd9-3a198304dd3c.Record","label":"2.3.2➛Incident Record","reference":"incident","reference_display":"Incident","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a6fdca0-793e-4424-9fd9-3a198304dd3c.Table","label":"2.3.2➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.name","label":"2➛User Record➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"80c01c44-2b36-4e5c-af9d-772401b040d6.variable","label":"2.3.4➛phone_number","reference_display":"phone_number","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable","label":"2.3.5➛output","reference_display":"output","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable1","label":"2.3.5➛error message","reference_display":"error message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true"}},{"name":"a2d5b036-f109-48fc-8866-53544eefae9b.item.email","label":"2➛User Record➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"}]</label_cache>
+        <master>true</master>
+        <name>Scheduled - Phone Assignment</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Scheduled - Phone Assignment">b4c4edd013f194908907dd828144b08d</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>82393d10137594908907dd828144b04b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:34</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_variable_value action="delete_multiple" query="document_key=82393d10137594908907dd828144b04b"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=82393d10137594908907dd828144b04b^sys_idNOT IN0e393d10137594908907dd828144b058,12393d10137594908907dd828144b07c,46393d10137594908907dd828144b056,4a393d10137594908907dd828144b052,82393d10137594908907dd828144b05e,82393d10137594908907dd828144b072,86393d10137594908907dd828144b075,8a393d10137594908907dd828144b06a,8e393d10137594908907dd828144b078,c2393d10137594908907dd828144b04f,c6393d10137594908907dd828144b062,c6393d10137594908907dd828144b066,c6393d10137594908907dd828144b06e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d5dad10133594908907dd828144b022</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0e393d10137594908907dd828144b058</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0e393d10137594908907dd828144b058"/>
+    <sys_element_mapping action="delete_multiple" query="id=0e393d10137594908907dd828144b058"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0e393d10137594908907dd828144b058</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.3.1</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <subflow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>12393d10137594908907dd828144b07c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>d0068117-81c4-4a94-9f55-82abcda80341</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12393d10137594908907dd828144b07c"/>
+    <sys_element_mapping action="delete_multiple" query="id=12393d10137594908907dd828144b07c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_id</field>
+        <id>12393d10137594908907dd828144b07c</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>56393d10137594908907dd828144b07d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d043998133594908907dd828144b084</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>2.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>46393d10137594908907dd828144b056</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=46393d10137594908907dd828144b056"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0cd83110137594908907dd828144b0be</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4a393d10137594908907dd828144b052</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4a393d10137594908907dd828144b052"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4a393d10137594908907dd828144b052</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>c6393d10137594908907dd828144b055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>User already has a phone number.</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a393d10137594908907dd828144b052"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4a393d10137594908907dd828144b052</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>46393d10137594908907dd828144b055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4a393d10137594908907dd828144b052</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>82393d10137594908907dd828144b055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82393d10137594908907dd828144b05e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>0590cf61-8d4f-4ec8-a71d-134ffbbce51c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=82393d10137594908907dd828144b05e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82393d10137594908907dd828144b05e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>02393d10137594908907dd828144b060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>sys_created_onRELATIVEGT@hour@ago@24</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82393d10137594908907dd828144b05e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>c2393d10137594908907dd828144b060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Phone number clean up">7309d3ba13fb00d07cbd30128144b0d5</action_type>
+        <action_type_parent display_value="Phone number clean up">316d8b3a13bb00d07cbd30128144b0a0</action_type_parent>
+        <comment/>
+        <compiled_snapshot>7309d3ba13fb00d07cbd30128144b0d5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.4</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82393d10137594908907dd828144b072</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>80c01c44-2b36-4e5c-af9d-772401b040d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=82393d10137594908907dd828144b072"/>
+    <sys_element_mapping action="delete_multiple" query="id=82393d10137594908907dd828144b072"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>82393d10137594908907dd828144b072</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>c2393d10137594908907dd828144b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7309d3ba13fb00d07cbd30128144b0d5</table>
+        <value>{{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Teams Number">41fcbd1813af84108907dd828144b0de</action_type>
+        <action_type_parent display_value="Update Teams Number">11a7876413ee08908907dd828144b0fb</action_type_parent>
+        <comment/>
+        <compiled_snapshot>41fcbd1813af84108907dd828144b0de</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.5</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>86393d10137594908907dd828144b075</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>8d46d545-222f-45fd-ad4c-8ccb6c7533d8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=86393d10137594908907dd828144b075"/>
+    <sys_element_mapping action="delete_multiple" query="id=86393d10137594908907dd828144b075"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>86393d10137594908907dd828144b075</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>0e393d10137594908907dd828144b076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>86393d10137594908907dd828144b075</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>4a393d10137594908907dd828144b076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.2</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8a393d10137594908907dd828144b06a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>9a6fdca0-793e-4424-9fd9-3a198304dd3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8a393d10137594908907dd828144b06a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8a393d10137594908907dd828144b06a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b06c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8a393d10137594908907dd828144b06a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>8a393d10137594908907dd828144b06a</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>82393d10137594908907dd828144b06c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Lawson","value":"bf66d3836f88fa007cbb30444b3ee4e4"}^u_importance=Standard^u_service=Office Phone Support^subcategory=Lawson^short_description=Please update {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} phone number in Lawson to be {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} .</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>8a393d10137594908907dd828144b06a</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>ce393d10137594908907dd828144b06b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.6</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e393d10137594908907dd828144b078</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>29272f52-3b08-4b3c-98b1-57f89f33446d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8e393d10137594908907dd828144b078"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e393d10137594908907dd828144b078</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>4e393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e393d10137594908907dd828144b078"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>8e393d10137594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>46393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams Output: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable}}
+
+MS Teams Error Message: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>8e393d10137594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>0a393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} is assigned {{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>8e393d10137594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>ca393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b6437558133594908907dd828144b0de</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2393d10137594908907dd828144b04f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c2393d10137594908907dd828144b04f"/>
+    <sys_element_mapping action="delete_multiple" query="id=c2393d10137594908907dd828144b04f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c2393d10137594908907dd828144b04f</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>0e393d10137594908907dd828144b051</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}!=Active^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}=</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.1.1</order>
+        <parent_ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6393d10137594908907dd828144b062</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>419cfbae-1ed8-483f-a224-3f45ac72daf1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6393d10137594908907dd828144b062"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6393d10137594908907dd828144b062</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>86393d10137594908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6393d10137594908907dd828144b062"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c6393d10137594908907dd828144b062</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>8e393d10137594908907dd828144b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Following fields are must and can not be empty in or to get a phone assigned:
+User ID: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}
+Employee Number: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}
+Email: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}
+Status: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c6393d10137594908907dd828144b062</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Phone will not be assigned to  {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c6393d10137594908907dd828144b062</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6393d10137594908907dd828144b066</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>63302120-eb41-4bc9-a98b-3a650f6499ae</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6393d10137594908907dd828144b066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6393d10137594908907dd828144b066</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>86393d10137594908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6393d10137594908907dd828144b066"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c6393d10137594908907dd828144b066</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>8e393d10137594908907dd828144b067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User already has a phone number {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}} and will not be assigned another one.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c6393d10137594908907dd828144b066</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} already has a phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c6393d10137594908907dd828144b066</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.3</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6393d10137594908907dd828144b06e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>bed24f52-f850-413f-91e3-e28ca8fb26b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6393d10137594908907dd828144b06e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6393d10137594908907dd828144b06e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>86393d10137594908907dd828144b070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6393d10137594908907dd828144b06e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c6393d10137594908907dd828144b06e</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>8e393d10137594908907dd828144b06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Made change in SN User table and opened ticket in lawson. 
+User = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}},
+Available Phone = {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}
+Business Phone Assigned = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c6393d10137594908907dd828144b06e</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} will be assigned {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c6393d10137594908907dd828144b06e</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=82393d10137594908907dd828144b04b^sys_idNOT IN42393d10137594908907dd828144b07b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_class_name>sys_hub_trigger_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>42393d10137594908907dd828144b07b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:37</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=42393d10137594908907dd828144b07b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>42393d10137594908907dd828144b07b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>da393d10137594908907dd828144b07b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>1970-01-01 23:59:59</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=82393d10137594908907dd828144b04b^sys_idNOT IN8e393d10137594908907dd828144b04b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>82393d10137594908907dd828144b04b</id>
+        <name>Scheduled - Phone Assignment</name>
+        <sys_class_name>sys_flow_cat_variable_model</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e393d10137594908907dd828144b04b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:34</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=82393d10137594908907dd828144b04b^sys_idNOT IN82393d10137594908907dd828144b05e,82393d10137594908907dd828144b072,86393d10137594908907dd828144b075,8a393d10137594908907dd828144b06a,8e393d10137594908907dd828144b078,c6393d10137594908907dd828144b062,c6393d10137594908907dd828144b066,c6393d10137594908907dd828144b06e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82393d10137594908907dd828144b05e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>0590cf61-8d4f-4ec8-a71d-134ffbbce51c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=82393d10137594908907dd828144b05e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82393d10137594908907dd828144b05e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>02393d10137594908907dd828144b060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>sys_created_onRELATIVEGT@hour@ago@24</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>82393d10137594908907dd828144b05e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>c2393d10137594908907dd828144b060</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Phone number clean up">7309d3ba13fb00d07cbd30128144b0d5</action_type>
+        <action_type_parent display_value="Phone number clean up">316d8b3a13bb00d07cbd30128144b0a0</action_type_parent>
+        <comment/>
+        <compiled_snapshot>7309d3ba13fb00d07cbd30128144b0d5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.4</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>82393d10137594908907dd828144b072</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>80c01c44-2b36-4e5c-af9d-772401b040d6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=82393d10137594908907dd828144b072"/>
+    <sys_element_mapping action="delete_multiple" query="id=82393d10137594908907dd828144b072"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>82393d10137594908907dd828144b072</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>c2393d10137594908907dd828144b073</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_7309d3ba13fb00d07cbd30128144b0d5</table>
+        <value>{{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Teams Number">41fcbd1813af84108907dd828144b0de</action_type>
+        <action_type_parent display_value="Update Teams Number">11a7876413ee08908907dd828144b0fb</action_type_parent>
+        <comment/>
+        <compiled_snapshot>41fcbd1813af84108907dd828144b0de</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.5</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>86393d10137594908907dd828144b075</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>8d46d545-222f-45fd-ad4c-8ccb6c7533d8</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=86393d10137594908907dd828144b075"/>
+    <sys_element_mapping action="delete_multiple" query="id=86393d10137594908907dd828144b075"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>email</field>
+        <id>86393d10137594908907dd828144b075</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>0e393d10137594908907dd828144b076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>phone_number</field>
+        <id>86393d10137594908907dd828144b075</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>4a393d10137594908907dd828144b076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_41fcbd1813af84108907dd828144b0de</table>
+        <value>{{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.2</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8a393d10137594908907dd828144b06a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>9a6fdca0-793e-4424-9fd9-3a198304dd3c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8a393d10137594908907dd828144b06a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8a393d10137594908907dd828144b06a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b06c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>incident</value>
+        <variable display_value="">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8a393d10137594908907dd828144b06a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>8a393d10137594908907dd828144b06a</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>82393d10137594908907dd828144b06c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>assignment_group={"display":"Lawson","value":"bf66d3836f88fa007cbb30444b3ee4e4"}^u_importance=Standard^u_service=Office Phone Support^subcategory=Lawson^short_description=Please update {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} phone number in Lawson to be {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} .</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>8a393d10137594908907dd828144b06a</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>ce393d10137594908907dd828144b06b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.6</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>8e393d10137594908907dd828144b078</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>29272f52-3b08-4b3c-98b1-57f89f33446d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8e393d10137594908907dd828144b078"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>8e393d10137594908907dd828144b078</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>4e393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8e393d10137594908907dd828144b078"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>8e393d10137594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>46393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams Output: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable}}
+
+MS Teams Error Message: {{8d46d545-222f-45fd-ad4c-8ccb6c7533d8.variable1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>8e393d10137594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>0a393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>MS Teams: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} is assigned {{80c01c44-2b36-4e5c-af9d-772401b040d6.variable}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>8e393d10137594908907dd828144b078</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>ca393d10137594908907dd828144b07a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.1.1</order>
+        <parent_ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6393d10137594908907dd828144b062</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>419cfbae-1ed8-483f-a224-3f45ac72daf1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6393d10137594908907dd828144b062"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6393d10137594908907dd828144b062</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>86393d10137594908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6393d10137594908907dd828144b062"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c6393d10137594908907dd828144b062</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>8e393d10137594908907dd828144b063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Following fields are must and can not be empty in or to get a phone assigned:
+User ID: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}
+Employee Number: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}
+Email: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}
+Status: {{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c6393d10137594908907dd828144b062</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Phone will not be assigned to  {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c6393d10137594908907dd828144b062</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b064</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.2.1</order>
+        <parent_ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6393d10137594908907dd828144b066</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>63302120-eb41-4bc9-a98b-3a650f6499ae</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6393d10137594908907dd828144b066"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6393d10137594908907dd828144b066</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>86393d10137594908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6393d10137594908907dd828144b066"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c6393d10137594908907dd828144b066</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>8e393d10137594908907dd828144b067</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User already has a phone number {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}} and will not be assigned another one.</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c6393d10137594908907dd828144b066</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} already has a phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c6393d10137594908907dd828144b066</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b068</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Post a Message">549822431324030039a039ed9344b085</action_type>
+        <action_type_parent display_value="Post a Message">23be39c713e0030039a039ed9344b058</action_type_parent>
+        <comment/>
+        <compiled_snapshot>549822431324030039a039ed9344b085</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <order>2.3.3</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c6393d10137594908907dd828144b06e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>bed24f52-f850-413f-91e3-e28ca8fb26b0</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6393d10137594908907dd828144b06e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6393d10137594908907dd828144b06e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>86393d10137594908907dd828144b070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>https://outlook.office.com/webhook/17f285db-a957-49c8-bb80-a88c19c4b11e@7530bded-fd6e-4f58-b5d2-ea681eb07663/BitbucketServer/e04a4e5c8f664abdb43b2da7427647e7/f4bd6dd7-af54-4003-87c3-baf4cd1fbd99</value>
+        <variable display_value="">689822431324030039a039ed9344b088</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6393d10137594908907dd828144b06e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_message</field>
+        <id>c6393d10137594908907dd828144b06e</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>8e393d10137594908907dd828144b06f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>Made change in SN User table and opened ticket in lawson. 
+User = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}},
+Available Phone = {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}}
+Business Phone Assigned = {{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_title</field>
+        <id>c6393d10137594908907dd828144b06e</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value>User {{a2d5b036-f109-48fc-8866-53544eefae9b.item.name}} will be assigned {{d0068117-81c4-4a94-9f55-82abcda80341.availablephonenumber}} phone number</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_webhook_url</field>
+        <id>c6393d10137594908907dd828144b06e</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>06393d10137594908907dd828144b070</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_action_input_549822431324030039a039ed9344b085</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=82393d10137594908907dd828144b04b^sys_idNOT IN12393d10137594908907dd828144b07c"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <order>2.3.1</order>
+        <parent_ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</parent_ui_id>
+        <subflow display_value="Assign available phone number ">263dc561133fc4907cbd30128144b052</subflow>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>12393d10137594908907dd828144b07c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>d0068117-81c4-4a94-9f55-82abcda80341</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=12393d10137594908907dd828144b07c"/>
+    <sys_element_mapping action="delete_multiple" query="id=12393d10137594908907dd828144b07c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>user_id</field>
+        <id>12393d10137594908907dd828144b07c</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>56393d10137594908907dd828144b07d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_263dc561133fc4907cbd30128144b052</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=82393d10137594908907dd828144b04b^sys_idNOT IN0e393d10137594908907dd828144b058,46393d10137594908907dd828144b056,4a393d10137594908907dd828144b052,c2393d10137594908907dd828144b04f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d5dad10133594908907dd828144b022</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0e393d10137594908907dd828144b058</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0e393d10137594908907dd828144b058"/>
+    <sys_element_mapping action="delete_multiple" query="id=0e393d10137594908907dd828144b058"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>0e393d10137594908907dd828144b058</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>42393d10137594908907dd828144b05b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{0590cf61-8d4f-4ec8-a71d-134ffbbce51c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8d043998133594908907dd828144b084</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>2.3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>46393d10137594908907dd828144b056</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>36483284-ed84-4bcd-873c-e7554dbdfa91</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=46393d10137594908907dd828144b056"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0cd83110137594908907dd828144b0be</block>
+        <comment/>
+        <connected_to>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>2.2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4a393d10137594908907dd828144b052</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>0f561b2d-dd93-473e-be79-3b2ecb886693</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4a393d10137594908907dd828144b052"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4a393d10137594908907dd828144b052</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>c6393d10137594908907dd828144b055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <value>User already has a phone number.</value>
+        <variable display_value="">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4a393d10137594908907dd828144b052"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4a393d10137594908907dd828144b052</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>46393d10137594908907dd828144b055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.phone}}!=</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4a393d10137594908907dd828144b052</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>82393d10137594908907dd828144b055</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">b6437558133594908907dd828144b0de</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Scheduled - Phone Assignment">82393d10137594908907dd828144b04b</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2.1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a2d5b036-f109-48fc-8866-53544eefae9b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c2393d10137594908907dd828144b04f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="onboarding_automation">e71ebc4b137244108907dd828144b0af</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <ui_id>f0a4ce9a-8d98-405b-b52b-8a7ff8363fe3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c2393d10137594908907dd828144b04f"/>
+    <sys_element_mapping action="delete_multiple" query="id=c2393d10137594908907dd828144b04f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c2393d10137594908907dd828144b04f</id>
+        <sys_created_by>psharma</sys_created_by>
+        <sys_created_on>2020-06-30 10:27:35</sys_created_on>
+        <sys_id>0e393d10137594908907dd828144b051</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>psharma</sys_updated_by>
+        <sys_updated_on>2020-06-30 10:27:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{a2d5b036-f109-48fc-8866-53544eefae9b.item.user_name}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.u_status}}!=Active^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.employee_number}}=^NQ{{a2d5b036-f109-48fc-8866-53544eefae9b.item.email}}=</value>
+    </sys_element_mapping>
+</record_update>
